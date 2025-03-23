@@ -1,0 +1,52 @@
+@use "./../../mixins.scss" as *;
+
+section {
+  @include dFlex();
+}
+
+.about-me-wrapper {
+  display: flex;
+  gap: 32px;
+  padding: 144px 120px;
+}
+
+.about-me-content-left {
+  @include dFlex();
+  flex-direction: column;
+}
+
+.location-info-top {
+  margin-bottom: -60px;
+  z-index: 999;
+
+  > img {
+    width: 560px;
+    height: 152px;
+  }
+}
+
+.location-info-center {
+  margin-bottom: -50px;
+  z-index: 1;
+
+  > img {
+    width: 560px;
+    height: 152px;
+  }
+}
+
+.location-info-bottom {
+  > img {
+    width: 560px;
+    height: 152px;
+  }
+}
+
+.about-me-content-right {
+}
+
+button {
+  @include btnStyle($bColor: black, $color: black);
+  box-shadow: 2px 4px black;
+  font-size: 20px;
+}
