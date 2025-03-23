@@ -1,0 +1,20 @@
+@mixin dFlex($jContent: center, $aItems: center, $gap: 0px) {
+  display: flex;
+  justify-content: $jContent;
+  align-items: $aItems;
+  gap: $gap;
+}
+
+@mixin btnStyle(
+  $radius: 100px,
+  $bColor: #f8f9fa,
+  $color: #f8f9fa,
+  $padding: 12px 24px
+) {
+  border: 1px solid $bColor;
+  border-radius: $radius;
+  border-color: $bColor;
+  color: $color;
+  padding: $padding;
+  background-color: transparent;
+}

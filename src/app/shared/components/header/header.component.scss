@@ -1,0 +1,74 @@
+@use "./../../../mixins.scss" as *;
+
+section {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.header-wrapper {
+  @include dFlex($jContent: space-between);
+  padding: 16px 72px;
+  height: 80px;
+  margin: 0px auto;
+  max-width: 1440px;
+}
+
+.navbar-logo {
+  cursor: pointer;
+}
+
+.navbar-links {
+  @include dFlex($jContent: space-evenly);
+  width: 100%;
+  font-size: 18px;
+
+  > a {
+    position: relative;
+    color: #f8f9fa;
+
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+    }
+
+    &:hover img {
+      display: block;
+    }
+  }
+}
+
+.navbar-language-changer {
+  @include dFlex($gap: 4px);
+
+  > img:nth-child(1) {
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  > img:nth-child(2) {
+    width: 32px;
+    height: 16px;
+  }
+
+  > img:nth-child(3) {
+    width: 32px;
+    height: 32px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+  }
+}

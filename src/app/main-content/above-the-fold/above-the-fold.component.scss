@@ -1,0 +1,84 @@
+@use "./../../mixins.scss" as *;
+
+section {
+  @include dFlex();
+  flex-direction: column;
+  background-image: url("./../../../../public/images/atf_bg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 110vh;
+}
+
+.hero-top-wrapper {
+  @include dFlex($aItems: end, $gap: 64px);
+  margin-top: 64px;
+}
+
+.hero-top-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-top-btn {
+  @include dFlex($jContent: flex-start);
+
+  > button {
+    @include btnStyle();
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+
+.hero-text {
+  > h1 {
+    display: flex;
+    font-size: 128px;
+    color: #f8f9fa;
+  }
+}
+
+.hero-profile {
+  > img {
+    width: 205px;
+    height: 244px;
+    margin-bottom: 16px;
+    transform: rotate(8deg);
+  }
+}
+
+.hero-lower-wrapper {
+  display: flex;
+  margin-left: 150px;
+}
+
+.hero-lower-btn {
+  @include dFlex($jContent: flex-end);
+  margin-top: 24px;
+
+  > button {
+    @include btnStyle();
+    box-shadow: 2px 4px #f8f9fa;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
+
+.hero-social-media-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 72px;
+  gap: 8px;
+
+  > img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #f8f9fa;
+    border-radius: 100px;
+    padding: 4px;
+  }
+}
