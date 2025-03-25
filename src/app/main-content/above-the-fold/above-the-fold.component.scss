@@ -72,6 +72,7 @@ section {
   max-width: 1440px;
   padding-left: 72px;
   gap: 8px;
+  box-sizing: border-box;
 
   > img {
     cursor: pointer;
