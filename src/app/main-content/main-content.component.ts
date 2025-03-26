@@ -3,6 +3,7 @@ import { HeaderComponent } from '../shared/components/header/header.component';
 import { AboveTheFoldComponent } from './above-the-fold/above-the-fold.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
+import { MyCraftComponent } from './my-craft/my-craft.component';
 
 @Component({
   selector: 'app-main-content',
@@ -11,7 +12,8 @@ import { SkillSetComponent } from './skill-set/skill-set.component';
     AboveTheFoldComponent,
     AboutMeComponent,
     SkillSetComponent,
-  ],
+    MyCraftComponent,
+],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
 })
