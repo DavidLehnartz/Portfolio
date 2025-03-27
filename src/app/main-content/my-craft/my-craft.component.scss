@@ -62,28 +62,77 @@ section {
 
   > img {
     display: flex;
+
     width: 560px;
-    height: 337px;
+    height: auto;
     margin-bottom: 32px;
   }
+}
 
-  > div:nth-child(1) {
+.my-craft-featured-sticker {
+  > img {
     display: flex;
     position: absolute;
-    top: 145px;
+    top: 200px;
   }
+}
 
-  > div:nth-child(2) {
-    > h2 {
-      font-size: 24px;
-      font-weight: 700;
-    }
+.my-craft-project-name-description {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  > h2 {
+    font-size: 24px;
+    font-weight: 700;
   }
+}
 
-  > div:nth-child(3) {
-    > p {
-      font-size: 20px;
-      font-weight: 400;
-    }
+.my-craft-project-description {
+  > p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.my-craft-all-projects-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  /* width: 50%; */
+  padding: 0px 120px;
+  max-width: 1440px;
+  margin: 0px auto;
+  gap: 64px;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  > img {
+    width: 100%;
+    /* width: 560px; */
+    /* height: 398px; */
+    height: auto;
+  }
+}
+
+.project-name-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  > h2 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+
+.project-description {
+  > p {
+    font-size: 18px;
+    font-weight: 400;
   }
 }
