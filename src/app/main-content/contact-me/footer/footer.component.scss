@@ -1,0 +1,39 @@
+@use '../../../mixins.scss' as*;
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0px auto;
+    padding: 0px 120px;
+}
+
+.footer-logo-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo{
+    >img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.footer-text{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f8f9fa;
+}
+
+.footer-nav-links{
+@include dFlex($jContent: space-between);
+margin-top: 16px;
+
+>a{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f8f9fa;
+}
+}

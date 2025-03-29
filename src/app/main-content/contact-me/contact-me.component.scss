@@ -1,11 +1,10 @@
 section {
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   background-image: url("./../../../../public/images/contact_me_bg.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  /* transform: rotate(180deg); */
 }
 
 .contact-me-wrapper {
@@ -15,7 +14,9 @@ section {
   gap: 100px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 144px 120px;
+  padding-top: 144px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .contact-me-left-content {
@@ -49,6 +50,11 @@ section {
     font-weight: 400;
     color: #f8f9fa;
   }
+}
+
+.contact-me-arrow{
+  display: flex;
+  justify-content: end;
 }
 
 .contact-me-right-content {

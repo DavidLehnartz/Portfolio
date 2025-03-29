@@ -5,7 +5,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
 import { MyCraftComponent } from './my-craft/my-craft.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { FooterComponent } from './footer/footer.component';
 import { ContactMeComponent } from "./contact-me/contact-me.component";
 
 @Component({
@@ -18,8 +17,6 @@ import { ContactMeComponent } from "./contact-me/contact-me.component";
     MyCraftComponent,
     TestimonialsComponent,
     ContactMeComponent,
-    /* FooterComponent, */
-    
 ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
