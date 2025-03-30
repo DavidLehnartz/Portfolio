@@ -1,4 +1,4 @@
-@use "./../../../mixins.scss" as *;
+@use "./../../mixins.scss" as *;
 
 section {
   position: absolute;
@@ -25,6 +25,7 @@ section {
   @include dFlex($jContent: space-evenly);
   width: 100%;
   font-size: 18px;
+  font-weight: 500;
 
   > a {
     position: relative;
@@ -42,6 +43,10 @@ section {
       display: block;
     }
   }
+}
+
+.blackText {
+  color: #000000 !important;
 }
 
 .navbar-language-changer {

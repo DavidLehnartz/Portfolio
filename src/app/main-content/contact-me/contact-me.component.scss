@@ -67,4 +67,16 @@ section {
   display: flex;
   align-items: center;
   justify-content: end;
+  position: relative;
+}
+
+.inner-logo{
+  position: absolute;
+  right: 40px;
+  /* transform: translate(50% 50%); */
+
+  > img {
+    width: 96px;
+    height: 96px;
+  }
 }

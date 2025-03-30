@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MainContentComponent } from "./main-content/main-content.component";
+import { MainContentComponent } from './main-content/main-content.component';
+import { SingleProjectsComponent } from './single-projects/single-projects.component';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    MainContentComponent,
-],
+
+    /* MainContentComponent, */
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
