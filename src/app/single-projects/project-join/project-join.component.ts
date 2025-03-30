@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { ProjectsHeaderComponent } from "../projects-header/projects-header.component";
+import { ProjectHeaderComponent} from "../project-header/projects-header.component";
 
 @Component({
   selector: 'app-project-join',
-  imports: [ProjectsHeaderComponent],
+  imports: [ProjectHeaderComponent],
   templateUrl: './project-join.component.html',
   styleUrl: './project-join.component.scss'
 })
