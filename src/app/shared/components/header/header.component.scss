@@ -47,7 +47,7 @@ section {
 .navbar-language-changer {
   @include dFlex($gap: 4px);
 
-  > img:nth-child(1) {
+  /* > img:nth-child(1) {
     width: 32px;
     height: 32px;
 
@@ -68,10 +68,77 @@ section {
     &:hover {
       cursor: pointer;
     }
-  }
+  } */
 
   button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     background-color: transparent;
     border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f8f9fa;
+    cursor: pointer;
+
+    > img {
+      position: absolute;
+      display: none;
+    }
+
+    &:hover img {
+      display: block;
+    }
   }
+}
+
+button:active {
+  color: #f87a55;
+
+  &:hover img {
+    display: none;
+  }
+}
+
+.line {
+  position: relative;
+  width: 32px;
+  height: 8px;
+  border: solid;
+  border-color: #f8f9fa;
+  background-color: #f87a55;
+  border-radius: 8px;
+}
+
+.dot-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+  width: 16px;
+  height: 16px;
+  background-color: #35f;
+  border: solid;
+  border-color: #f8f9fa;
+  border-radius: 50%;
+  transition: left 0.4s ease;
+}
+
+.dot-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  background-color: #35f;
+  border: solid;
+  border-color: #f8f9fa;
+  border-radius: 50%;
+  transition: left 0.4s ease;
+}
+
+.active {
+  color: #35f;
 }

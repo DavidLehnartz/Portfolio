@@ -1,5 +1,77 @@
-<section>
-    <div class="project-wrapper">
-      <app-projects-header></app-projects-header>
+<section class="fontBricolage">
+  <app-projects-header></app-projects-header>
+  <div [routerLink]="'/'" class="go-back">
+    <div class="go-back-img">
+      <img src="./icons/back_arrow_orange.png" alt="arrow" />
     </div>
-  </section>
+    <div class="go-back-text">go back</div>
+  </div>
+  <div class="project-wrapper">
+    <div class="project-left-content">
+      <div class="name">
+        <h1>DA Bubble</h1>
+        <img src="./icons/blue_stripe.png" alt="stripe" />
+      </div>
+      <div class="description">
+        <h2>Description</h2>
+        <p>
+          This App is a Slack Clone App. It revolutionizes team communication
+          and collaboration with its intuitive interface, real-time messaging,
+          and robust channel organization.
+        </p>
+      </div>
+      <div class="details">
+        <h2>Implementation Details</h2>
+        <p>
+          Short text that describes your role or the workflow for this specific
+          project. Let a recruiter know more about your knowledge and ability to
+          work independently or collaboratively in a structured way.
+        </p>
+      </div>
+      <div class="duration">
+        <h2>Duration:</h2>
+        <p>4 Weeks</p>
+      </div>
+      <div class="skills-list">
+        <div class="skill">
+          <img src="./icons/html_icon.png" alt="icon" />
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="./icons/css_icon.png" alt="icon" />
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="./icons/firebase_icon.png" alt="icon" />
+          <p>Firebase</p>
+        </div>
+        <div class="skill">
+          <img src="./icons/angular_icon.png" alt="icon" />
+          <p>Angular</p>
+        </div>
+        <div class="skill">
+          <img src="./icons/ts_icon.png" alt="icon" />
+          <p>Typescript</p>
+        </div>
+      </div>
+    </div>
+    <div class="project-right-content">
+      <div class="project-img">
+        <img src="./images/da_bubble_thumbnail.png" alt="join" />
+      </div>
+      <div class="sticker">
+        <img src="./icons/featured_project_sticker.png" alt="sticker" />
+      </div>
+      <div class="buttons">
+        <div class="button">GitHub</div>
+        <div class="button">Live Test</div>
+      </div>
+      <div class="next-project">
+        <div class="next-project-text">Next Project</div>
+        <div class="next-project-img">
+          <img src="./icons/next_arrow_yellow.png" alt="arrow" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

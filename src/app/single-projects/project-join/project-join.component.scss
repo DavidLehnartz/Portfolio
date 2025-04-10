@@ -37,6 +37,22 @@ section {
   gap: 10px;
 }
 
+.go-back-img {
+  width: 24px;
+  height: 24px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.go-back-text {
+  &:hover {
+    cursor: pointer;
+    color: #3355ff;
+  }
+}
+
 .name {
   display: flex;
   flex-direction: column;
@@ -173,12 +189,17 @@ section {
   color: white;
   font-size: 18px;
   font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+    color: #3355ff;
+  }
 }
 
 .next-project-img {
   display: flex;
 
-  >img{
+  > img {
     width: 24px;
     height: 24px;
   }
