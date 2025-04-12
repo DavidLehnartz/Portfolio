@@ -129,22 +129,34 @@ p {
 
 button {
   @include btnStyle($bColor: black, $color: black);
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  box-shadow: 2px 4px black;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+
+  &:hover {
+    bottom: 30px;
+    right: 30px;
+    background-color: #3355ff;
+    box-shadow: 0px 0px #f8f9fa;
     opacity: 1;
-    box-shadow: 2px 4px black;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 700;
-
-    &:hover {
-      bottom: 30px;
-      right: 30px;
-      background-color: #3355ff;
-      box-shadow: 0px 0px #f8f9fa;
-      opacity: 1;
-      color: #f8f9fa;
-      transition: all 0.3s ease-in-out;
-      transform: scale(1.05);
-    }
+    color: #f8f9fa;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
   }
+}
 
+@media (max-width: 1160px) {
+  .about-me-wrapper {
+    flex-direction: column-reverse;
+    padding: 144px 60px;
+  }
+}
+
+@media (max-width: 830px) {
+  .about-me-wrapper {
+    padding: 144px 32px;
+  }
+}

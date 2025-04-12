@@ -113,3 +113,40 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
+@media (max-width: 1520px) {
+  .testimonials-wrapper {
+    padding: 144px 60px;
+  }
+}
+
+@media (max-width: 1440px) {
+  section {
+    height: auto;
+  }
+
+  .testimonials-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-left {
+    margin-right: 0px;
+    margin-bottom: -50px;
+  }
+
+  .testimonial-right {
+    margin-left: 0px;
+    margin-top: -5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonials-header-bottom {
+    text-align: end;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+  }
+}
