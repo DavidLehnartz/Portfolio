@@ -69,11 +69,12 @@ section {
   width: fit-content;
   border-radius: 20px;
   animation: upAndDown 2s ease-in-out infinite;
+  transition: transform 0.5s ease-in-out;
 
   &:hover {
     cursor: pointer;
     background: linear-gradient(to top, #0009, #0000 50%);
-
+    
     transform: scale(1.1);
 
     animation: none;
@@ -134,13 +135,14 @@ section {
   position: relative;
   width: fit-content;
   border-radius: 20px;
-  transition: transform all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  animation: upAndDown 2s ease-in-out infinite;
 
   &:hover {
     cursor: pointer;
     background: linear-gradient(to top, #0009, #0000 50%);
     transform: scale(1.1);
-
+    
     animation: none;
   }
 
