@@ -18,25 +18,76 @@
   </div>
   <div class="skill-set-bottom-wrapper">
     <div class="skill-set-icons-content">
-      <div>
-        <img src="./images/pull_to_peel_sticker.png" alt="sricker" />
+      <div (click)="changeImage()" class="skill-set-sticker">
+        <img [src]="currentImage" alt="sticker" />
+
         <div class="fontKalam">
+          @if (isImageAActive) {
           <img src="./icons/pull_to_peel_arrow.png" alt="arrow" />
           Pull to <br />
-          peel
+          peel } @else{
+          <div class="peeled-sticker-content">
+            Also, im interested in diving into:
+            <div class="peeled-sticker-imgs">
+              <img src="./icons/python_icon.png" alt="icon" />
+              <img src="./icons/linux_icon.png" alt="icon" />
+            </div>
+          </div>
+          }
         </div>
       </div>
       <div>
-        <img src="./icons/html_icon.png" alt="icon" />
-        <img src="./icons/css_icon.png" alt="icon" />
-        <img src="./icons/js_icon.png" alt="icon" />
-        <img src="./icons/ts_icon.png" alt="icon" />
-        <img src="./icons/angular_icon.png" alt="icon" />
-        <img src="./icons/firebase_icon.png" alt="icon" />
-        <img src="./icons/git_icon.png" alt="icon" />
-        <img src="./icons/rest_api_icon.png" alt="icon" />
-        <img src="./icons/scrum_icon.png" alt="icon" />
-        <img src="./icons/material_design_icon.png" alt="icon" />
+        <div class="skill-set-icons">
+          <img src="./icons/html_icon.png" alt="icon" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/css_icon.png" alt="icon" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/js_icon.png" alt="icon" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/ts_icon.png" alt="icon" />
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/angular_icon.png" alt="icon" />
+          <span>Angular</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/firebase_icon.png" alt="icon" />
+          <span>Firebase</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/git_icon.png" alt="icon" />
+          <span>Git</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/rest_api_icon.png" alt="icon" />
+          <span>Rest-Api</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/scrum_icon.png" alt="icon" />
+          <span>Scrum</span>
+        </div>
+        <div class="skill-set-icons">
+          <img src="./icons/material_design_icon.png" alt="icon" />
+          <span
+            >Material <br />
+            Design</span
+          >
+        </div>
+        <div class="skill-set-sticker-responsive hidden">
+          <img src="./images/pull_to_peel_sticker.png" alt="sricker" />
+          <div class="fontKalam">
+            <img src="./icons/pull_to_peel_arrow.png" alt="arrow" />
+            Pull to <br />
+            peel
+          </div>
+        </div>
       </div>
     </div>
   </div>

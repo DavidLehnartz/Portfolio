@@ -14,29 +14,37 @@
       </a>
       <a href=""
         >Projects
-        <img src="./icons/projects_hover.png" alt="" />
+        <img src="./icons/projects_hover.png" alt="icon" />
       </a>
       <a href=""
         >Contact
-        <img src="./icons/contact_hover.png" alt="" />
+        <img src="./icons/contact_hover.png" alt="icon" />
       </a>
     </div>
     <div class="navbar-language-changer">
-      <button >
+      <button
+        (click)="setLanguage('en')"
+        [class.active-language]="isEnglishActive"
+      >
         EN
-        <img src="./icons/language_hover_frame.png" alt="">
+        <img src="./icons/language_hover_frame.png" alt="icon" />
       </button>
-      <!-- <img src="./icons/en_language_button_orange.png" alt="" /> -->
-      <!--  <img src="./icons/language_toggle_left.png" alt="" /> -->
-        <!--  <img src="./icons/de_language_button_white.png" alt="" /> -->
       <div class="line">
-        <div class="dot-left"></div>
+        <div
+          class="dot"
+          [class.move-right]="!isEnglishActive"
+        ></div>
       </div>
-      <button>
+      <button
+        (click)="setLanguage('de')"
+        [class.active-language]="!isEnglishActive"
+      >
         DE
-        <img src="./icons/language_hover_frame.png" alt="">
+        <img src="./icons/language_hover_frame.png" alt="frame" />
       </button>
-     
+    </div>
+    <div class="burger-menu-responsive">
+      <img src="./icons/burger_default.png" alt="icon" />
     </div>
   </div>
 </section>

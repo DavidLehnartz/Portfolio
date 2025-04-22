@@ -142,7 +142,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* width: 50%; */
+  width: 45%;
 
   > img {
     width: 560px;
@@ -203,4 +203,79 @@ section {
     width: 24px;
     height: 24px;
   }
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 1400px) {
+  section {
+    background-image: url("./../../../../public/images/project_bg_rotated1.PNG");
+    background-position: center;
+  }
+
+  .header-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding-top: 100px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .project-left-content {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .project-right-content {
+    width: 100%;
+  }
+
+  .project-img {
+    justify-content: center;
+  }
+
+  .name {
+    > h1 {
+      font-size: 48px;
+    }
+  }
+
+  .description {
+    > h2 {
+      font-size: 20px;
+    }
+  }
+
+  .details {
+    > h2 {
+      font-size: 20px;
+    }
+  }
+
+  .duration {
+    > h2 {
+      font-size: 20px;
+    }
+  }
+
+  .sticker {
+    display: none;
+  }
+
+  .go-back {
+    display: none;
+  }
+
+  .buttons {
+    margin: 32px 0px;
+  }
+}
+
+@media (max-width: 600px) {
 }

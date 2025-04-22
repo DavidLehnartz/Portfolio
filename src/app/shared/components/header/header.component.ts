@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
 
-  
+export class HeaderComponent {
+  isEnglishActive: boolean = true;
+
+  setLanguage(string: 'en' | 'de') {
+    this.isEnglishActive = string === 'en';
+  }
 }

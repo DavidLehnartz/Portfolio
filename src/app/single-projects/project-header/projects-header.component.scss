@@ -82,3 +82,26 @@ section {
     border: none;
   }
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 1400px) {
+  .header-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar-links {
+    > a {
+      color: #000000;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  
+
+  .navbar-links {
+    display: none;
+  }
+}

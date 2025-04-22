@@ -47,29 +47,6 @@ section {
 .navbar-language-changer {
   @include dFlex($gap: 4px);
 
-  /* > img:nth-child(1) {
-    width: 32px;
-    height: 32px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  > img:nth-child(2) {
-    width: 32px;
-    height: 16px;
-  }
-
-  > img:nth-child(3) {
-    width: 32px;
-    height: 32px;
-
-    &:hover {
-      cursor: pointer;
-    }
-  } */
-
   button {
     display: flex;
     justify-content: center;
@@ -81,14 +58,23 @@ section {
     font-weight: bold;
     color: #f8f9fa;
     cursor: pointer;
+    transition: color 0.5s;
 
     > img {
       position: absolute;
       display: none;
     }
 
-    &:hover img {
+    &:hover > img {
       display: block;
+    }
+
+    &.active-language {
+      color: #00d1ff; // z.B. ein Cyan-Ton für aktive Sprache
+
+      > img {
+        display: block;
+      }
     }
   }
 }
@@ -111,11 +97,11 @@ button:active {
   border-radius: 8px;
 }
 
-.dot-left {
+.dot {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   left: -5px;
+  transform: translateY(-50%);
   width: 16px;
   height: 16px;
   background-color: #35f;
@@ -125,20 +111,40 @@ button:active {
   transition: left 0.4s ease;
 }
 
-.dot-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -5px;
-  width: 16px;
-  height: 16px;
-  background-color: #35f;
-  border: solid;
-  border-color: #f8f9fa;
-  border-radius: 50%;
-  transition: left 0.4s ease;
+.dot.move-right {
+  left: calc(100% - 15px);
 }
 
 .active {
   color: #35f;
+}
+
+.active-language {
+  color: #f87a55;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 960px) {
+  .header-wrapper {
+    padding: 16px 32px;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-language-changer {
+    display: none;
+  }
+
+  .burger-menu-responsive {
+    display: block;
+  }
+}
+
+@media (min-width: 960px) {
+  .burger-menu-responsive {
+    display: none;
+  }
 }

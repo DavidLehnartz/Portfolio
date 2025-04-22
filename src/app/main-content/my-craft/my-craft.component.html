@@ -1,52 +1,63 @@
 <section class="fontBricolage">
   <div class="my-craft-wrapper">
     <div class="my-craft-top-left-wrapper">
-      <div class="my-craft-headline-content">
-        <div class="headline">
-          <p>MY CRAFT</p>
-          <h1>Projects</h1>
-          <img src="./icons/underline_yellow.png" alt="line" />
-        </div>
-        <div class="headline-text">
+      <!-- <div class="my-craft-headline-content"> -->
+      <div class="headline">
+        <p>MY CRAFT</p>
+        <h1>Projects</h1>
+        <img src="./icons/underline_yellow.png" alt="line" />
+      </div>
+      <div class="headline-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          nisi sapiente amet autem distinctio dolorem recusandae id error
+          nesciunt doloribus quas nostrum maiores reprehenderit, animi minima
+          dolore quidem delectus iure!
+        </p>
+      </div>
+      <!-- </div> -->
+    </div>
+    <div class="my-craft-top-right-wrapper">
+      <!-- <div class="all-project-content"> -->
+      <div [routerLink]="'/join'" class="project-image laptop">
+        <img
+          class="project-img"
+          src="./images/my_craft_laptop.png"
+          alt="thumbnail"
+        />
+        <img
+          class="featured-sticker"
+          src="./icons/featured_project_sticker.png"
+          alt="sticker"
+        />
+        <button>Project details</button>
+      </div>
+      <div class="project-name">
+        <h2>JOIN</h2>
+        <div class="project-description">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
-            nisi sapiente amet autem distinctio dolorem recusandae id error
-            nesciunt doloribus quas nostrum maiores reprehenderit, animi minima
-            dolore quidem delectus iure!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+            quaerat. Eos rem excepturi soluta facere culpa veritatis
+            voluptatibus, et delectus, quam ullam, recusandae praesentium
+            consequuntur ut! Eius dolores quas accusantium!
           </p>
         </div>
       </div>
-    </div>
-    <div class="my-craft-top-right-wrapper">
-      <div class="first-project-content">
-        <div [routerLink]="'/join'" class="first-project-image">
-          <img src="./images/my_craft_laptop.png" alt="thumbnail" />
-          <img
-            class="featured-sticker"
-            src="./icons/featured_project_sticker.png"
-            alt="sticker"
-          />
-          <button>Project details</button>
-        </div>
-        <div class="project-name">
-          <h2>JOIN</h2>
-          <div class="project-description">
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-              quaerat. Eos rem excepturi soluta facere culpa veritatis
-              voluptatibus, et delectus, quam ullam, recusandae praesentium
-              consequuntur ut! Eius dolores quas accusantium!
-            </p>
-          </div>
-        </div>
+      <div class="project-link-responsive">
+         <a href="#">Project details</a>
       </div>
+      <!-- </div> -->
     </div>
   </div>
   <div class="my-craft-all-projects-wrapper">
     <div class="all-project-content">
       <div [routerLink]="'/willyTheWizard'" class="project-image">
         <!--  <img src="./images/el_pollo_loco_ thumbnail.png" alt="thumbnail" />   -->
-        <img src="./images/my_craft_laptop.png" alt="thumbnail" />
+        <img
+          class="project-img"
+          src="./images/my_craft_laptop.png"
+          alt="thumbnail"
+        />
         <button>Project details</button>
       </div>
       <div class="project-name">
@@ -60,11 +71,18 @@
           </p>
         </div>
       </div>
+      <div class="project-link-responsive">
+        <a href="#">Project details</a>
+     </div>
     </div>
     <div class="all-project-content">
       <div [routerLink]="'/daBubble'" class="project-image">
         <!--  <img src="./images/da_bubble_thumbnail.png" alt="thumbnail" /> -->
-        <img src="./images/my_craft_laptop.png" alt="thumbnail" />
+        <img
+          class="project-img"
+          src="./images/my_craft_laptop.png"
+          alt="thumbnail"
+        />
         <button>Project details</button>
       </div>
       <div class="project-name">
@@ -78,6 +96,9 @@
           </p>
         </div>
       </div>
+      <div class="project-link-responsive">
+        <a href="#">Project details</a>
+     </div>
     </div>
   </div>
 </section>

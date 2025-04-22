@@ -2,7 +2,7 @@
 
 section {
   @include dFlex();
-  height: 90vh;
+  /* height: 90vh; */
 }
 
 h2 {
@@ -120,6 +120,13 @@ p {
   display: flex;
   flex-direction: column;
   gap: 48px;
+
+  >div:nth-child(2){
+    >p{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
 }
 
 .about-me-content-btn {
@@ -131,10 +138,12 @@ button {
   @include btnStyle($bColor: black, $color: black);
   transition: all 0.3s ease-in-out;
   opacity: 1;
+  border: none;
   box-shadow: 2px 4px black;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     bottom: 30px;
@@ -143,7 +152,7 @@ button {
     box-shadow: 0px 0px #f8f9fa;
     opacity: 1;
     color: #f8f9fa;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
     transform: scale(1.05);
   }
 }
@@ -151,12 +160,115 @@ button {
 @media (max-width: 1160px) {
   .about-me-wrapper {
     flex-direction: column-reverse;
-    padding: 144px 60px;
+    /* padding: 144px 60px; */
   }
 }
 
 @media (max-width: 830px) {
   .about-me-wrapper {
-    padding: 144px 32px;
+    padding: 144px 0px;
+  }
+
+  .about-me-content-right {
+    padding: 0px 32px;
+
+    > h2 {
+      padding: 0px 16px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .location-info-top {
+    > img {
+      width: 400px;
+    }
+  }
+
+  .location-info-center {
+    > img {
+      width: 400px;
+    }
+  }
+
+  .location-info-bottom {
+    > img {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .about-me-content-right {
+    padding: 0px 0px;
+
+    > div:nth-child(1) {
+      > h2 {
+        padding: 0px 16px;
+      }
+
+      > p {
+        padding: 0px 16px;
+      }
+
+      > img {
+        padding: 0px 16px;
+        width: 230px;
+      }
+    }
+
+    > div:nth-child(2) {
+      padding: 0px 16px;
+    }
+
+    > div:nth-child(3) {
+      padding: 0px 16px;
+    }
+  }
+
+  .location-info-top {
+    margin-bottom: -50px;
+    > div {
+      top: 45px;
+      transform: rotate(-8deg);
+      font-size: 20px;
+      gap: 8px;
+    }
+
+    > img {
+      width: 315px;
+    }
+  }
+
+  .location-info-center {
+    > div {
+      top: 25px;
+      font-size: 20px;
+      gap: 8px;
+    }
+    > img {
+      width: 315px;
+      height: 100px;
+    }
+  }
+
+  .location-info-bottom {
+    > div {
+      top: 55px;
+      font-size: 20px;
+      transform: rotate(10deg);
+      gap: 8px;
+    }
+    > img {
+      width: 315px;
+    }
   }
 }
