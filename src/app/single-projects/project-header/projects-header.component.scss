@@ -99,9 +99,17 @@ section {
 }
 
 @media (max-width: 620px) {
-  
-
   .navbar-links {
+    display: none;
+  }
+
+  .navbar-language-changer {
+    display: none;
+  }
+}
+
+@media (min-width: 620px) {
+  .burger-menu-responsive {
     display: none;
   }
 }

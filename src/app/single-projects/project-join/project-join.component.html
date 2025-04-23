@@ -1,10 +1,11 @@
 <section class="fontBricolage">
+  <div class="top-shadow"></div>
   <app-projects-header></app-projects-header>
   <div [routerLink]="'/'" class="go-back">
     <div>
       <img src="./icons/back_arrow_orange.png" alt="arrow" />
     </div>
-    <div class="go-back-text">go back</div>
+    <div class="go-back-text">Go Back</div>
   </div>
   <div class="project-wrapper">
     <div class="project-left-content">
@@ -65,10 +66,18 @@
         <div class="button">GitHub</div>
         <div class="button">Live Test</div>
       </div>
-      <div class="next-project">
-        <div class="next-project-text">Next Project</div>
-        <div class="next-project-img">
-          <img src="./icons/next_arrow_yellow.png" alt="arrow" />
+      <div class="project-navigation">
+        <div class="go-back-project-responsive">
+          <div class="next-project-img">
+            <img src="./icons/back_arrow_orange.png" alt="arrow" />
+          </div>
+          <div class="go-back-text">Go Back</div>
+        </div>
+        <div class="next-project">
+          <div class="next-project-text">Next Project</div>
+          <div class="next-project-img">
+            <img src="./icons/next_arrow_yellow.png" alt="arrow" />
+          </div>
         </div>
       </div>
     </div>
