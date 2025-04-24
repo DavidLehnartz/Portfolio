@@ -5,8 +5,20 @@ import { ProjectWillyTheWizardComponent } from './single-projects/project-willy-
 import { ProjectDaBubbleComponent } from './single-projects/project-da-bubble/da-bubble.component';
 
 export const routes: Routes = [
-  { path: '', component: MainContentComponent },
-  { path: 'join', component: ProjectJoinComponent },
-  { path: 'willyTheWizard', component: ProjectWillyTheWizardComponent },
-  { path: 'daBubble', component: ProjectDaBubbleComponent },
+  {
+    path: '',
+    component: MainContentComponent,
+  },
+  {
+    path: 'join',
+    component: ProjectJoinComponent,
+  },
+  {
+    path: 'willyTheWizard',
+    component: ProjectWillyTheWizardComponent,
+  },
+  {
+    path: 'daBubble',
+    component: ProjectDaBubbleComponent,
+  },
 ];

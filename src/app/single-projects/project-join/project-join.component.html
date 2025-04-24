@@ -1,11 +1,13 @@
 <section class="fontBricolage">
   <div class="top-shadow"></div>
   <app-projects-header></app-projects-header>
-  <div [routerLink]="'/'" class="go-back">
+  <div class="go-back">
     <div>
       <img src="./icons/back_arrow_orange.png" alt="arrow" />
     </div>
-    <div class="go-back-text">Go Back</div>
+    <div [routerLink]="['/']" fragment="my_craft" class="go-back-text">
+      Go Back
+    </div>
   </div>
   <div class="project-wrapper">
     <div class="project-left-content">

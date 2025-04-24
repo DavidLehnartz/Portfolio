@@ -149,6 +149,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 32px;
   width: 45%;
 
   > img {
@@ -184,10 +185,18 @@ section {
 
 .button {
   @include btnStyle();
+  border: none;
   box-shadow: 2px 4px #f8f9fa;
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
+
+  &:hover {
+    background-color: #3355ff;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px #f8f9fa;
+    transform: scale(1.05);
+  }
 }
 
 .project-navigation {
@@ -304,12 +313,9 @@ section {
     margin: 32px 0px;
   }
 
-  /* .go-back-project-responsive {
-    display: none;
-  } */
-
   .project-navigation {
     justify-content: space-between;
+    /* margin-bottom: 16px; */
   }
 }
 

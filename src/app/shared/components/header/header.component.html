@@ -4,19 +4,19 @@
       <img src="./logo/fox_logo.png" alt="logo" />
     </div>
     <div class="navbar-links fontBricolage">
-      <a href=""
+      <a [routerLink]="['/']" fragment="about_me"
         >About me
         <img src="./icons/about_me_hover.png" alt="" />
       </a>
-      <a href=""
+      <a [routerLink]="['/']" fragment="skill_set"
         >Skills
         <img src="./icons/skills_hover.png" alt="" />
       </a>
-      <a href=""
+      <a [routerLink]="['/']" fragment="my_craft"
         >Projects
         <img src="./icons/projects_hover.png" alt="icon" />
       </a>
-      <a href=""
+      <a [routerLink]="['/']" fragment="contact"
         >Contact
         <img src="./icons/contact_hover.png" alt="icon" />
       </a>
@@ -30,10 +30,7 @@
         <img src="./icons/language_hover_frame.png" alt="icon" />
       </button>
       <div class="line">
-        <div
-          class="dot"
-          [class.move-right]="!isEnglishActive"
-        ></div>
+        <div class="dot" [class.move-right]="!isEnglishActive"></div>
       </div>
       <button
         (click)="setLanguage('de')"
