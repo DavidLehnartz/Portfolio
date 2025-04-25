@@ -4,26 +4,27 @@
       <img src="./logo/fox_logo.png" alt="logo" />
     </div>
     <div class="navbar-links fontBricolage">
-      <a [routerLink]="['/']" fragment="about_me"
-        >About me
+      <a [routerLink]="['/']" fragment="about_me">
+        {{ "aboutMe.title" | translate }}
         <img src="./icons/about_me_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="skill_set"
-        >Skills
+        >{{ "skills.title" | translate }}
         <img src="./icons/skills_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="my_craft"
-        >Projects
+        >{{ "projects.title" | translate }}
         <img src="./icons/projects_hover.png" alt="icon" />
       </a>
       <a [routerLink]="['/']" fragment="contact"
-        >Contact
+        >{{ "contact.title" | translate }}
         <img src="./icons/contact_hover.png" alt="icon" />
       </a>
     </div>
     <div class="navbar-language-changer">
       <button
         (click)="setLanguage('en')"
+        (click)="changeLang('en')"
         [class.active-language]="isEnglishActive"
       >
         EN
@@ -34,6 +35,7 @@
       </div>
       <button
         (click)="setLanguage('de')"
+        (click)="changeLang('de')"
         [class.active-language]="!isEnglishActive"
       >
         DE
