@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skill-set',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss',
 })

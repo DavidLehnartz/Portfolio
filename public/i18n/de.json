@@ -10,15 +10,15 @@
     },
     "profession": {
         "oneLetter": "E",
-        "twoLetter": "n",
-        "threeLetter": "t",
-        "fourLetter": "w",
-        "fiveLetter": "i",
-        "sixLetter": "c",
-        "sevenLetter": "k",
-        "eightLetter": "l",
-        "nineLetter": "e",
-        "tenLetter": "r"
+        "twoLetter": "N",
+        "threeLetter": "T",
+        "fourLetter": "W",
+        "fiveLetter": "I",
+        "sixLetter": "C",
+        "sevenLetter": "K",
+        "eightLetter": "L",
+        "nineLetter": "E",
+        "tenLetter": "R"
     },
     "contact": {
         "title": "Kontakt"
@@ -32,6 +32,28 @@
     },
     "whoIs": {
         "title": "Wer ist David?",
-        "about": "Über mich"
+        "about": "Über mich",
+        "description": "Hallo, ich bin David. Ich liebe es, in der IT zu arbeiten, denn Programmieren fühlt sich an wie das Lösen spannender Rätsel jeden Tag. Meine Leidenschaft liegt darin, clevere und effiziente Lösungen zu entwickeln, die wirklich etwas bewirken. Meine Inspiration schöpfe ich aus den unendlichen Möglichkeiten, ständig Neues zu lernen, sei es durch neue Technologien oder komplexe Herausforderungen. Jedes Problem, das ich angehe, lehrt mich etwas Neues und motiviert mich, die eleganteste und wirkungsvollste Lösung zu finden.",
+        "based": "Sitz in Remscheid",
+        "relocate": "Offen für einen Umzug",
+        "remote": "Offen für Remote-Arbeit",
+        "talk": "Kontaktiere mich"
+    },
+    "stack": {
+        "title": "Skill set",
+        "text": "MEIN STACK",
+        "description": "Ich bin ein engagierter Frontend-Entwickler mit einer Leidenschaft für moderne Webtechnologien. Lernbereit und anpassungsfähig stelle ich mich neuen Herausforderungen mit Begeisterung. Überzeugen Sie sich selbst von meinen Fähigkeiten!",
+        "stickerTop": "Klick",
+        "stickerBottom": "mich",
+        "stickerPeeled": "Ich bin auch interessiert an:"
+    },
+    "myWork": {
+        "title": "Projekte",
+        "text": "MEINE ARBEIT",
+        "description": "Hier findest du eine sorgfältig ausgewählte Auswahl meiner Projekte – jedes davon ein Ergebnis meiner Leidenschaft für Webentwicklung, Kreativität und Problemlösung. Diese Projekte spiegeln meinen Weg des Lernens, Wachsens und der Umsetzung von Ideen in reale, wirkungsvolle Anwendungen wider.",
+        "projectDescription1": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
+        "projectDescription2": "",
+        "projectDescription3": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.",
+        "detailBtn": "Projekt details"
     }
 }

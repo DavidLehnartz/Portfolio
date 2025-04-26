@@ -10,14 +10,14 @@
     },
     "profession": {
         "oneLetter": "D",
-        "twoLetter": "e",
-        "threeLetter": "v",
-        "fourLetter": "e",
-        "fiveLetter": "l",
-        "sixLetter": "o",
-        "sevenLetter": "p",
-        "eightLetter": "e",
-        "nineLetter": "r",
+        "twoLetter": "E",
+        "threeLetter": "V",
+        "fourLetter": "E",
+        "fiveLetter": "L",
+        "sixLetter": "O",
+        "sevenLetter": "P",
+        "eightLetter": "E",
+        "nineLetter": "R",
         "tenLetter": ""
     },
     "contact": {
@@ -32,6 +32,28 @@
     },
     "whoIs": {
         "title": "Who`s David?",
-        "about": "About me"
+        "about": "About me",
+        "description": "Hey there, I'm David. I love working in IT because coding feels like solving exciting puzzles every day. I'm passionate about creating smart and efficient solutions that really make a difference. My inspiration comes from the endless opportunities to learn and improve, whether through new technologies or complex challenges. Every problem I tackle teaches me something new and drives me to find the most elegant and powerful way to solve it.",
+        "based": "Based in Remscheid",
+        "relocate": "Open to relocate",
+        "remote": "Open to work remote",
+        "talk": "Let`s talk"
+    },
+    "stack": {
+        "title": "Skill set",
+        "text": "MY STACK",
+        "description": "I am a dedicated frontend developer with a passion for modern web technologies. Eager to learn and adaptable, I approach new challenges with enthusiasm. See for yourself what I can do!",
+        "stickerTop": "Click",
+        "stickerBottom": "me!",
+        "stickerPeeled": "Also, im interested in diving into:"
+    },
+    "myWork": {
+        "title": "Projects",
+        "text": "MY CRAFT",
+        "description": "Here you will find a curated selection of my projects – each one a result of my passion for web development, creativity, and problem-solving. These projects represent my journey of learning, growing, and turning ideas into real, impactful applications.",
+        "projectDescription1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
+        "projectDescription2": "",
+        "projectDescription3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. ",
+        "detailBtn": "Project details"
     }
 }

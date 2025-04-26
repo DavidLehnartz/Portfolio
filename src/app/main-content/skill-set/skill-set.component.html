@@ -1,18 +1,16 @@
 <section id="skill_set" class="fontBricolage">
   <div class="skill-set-top-wrapper">
     <div class="skill-set-logo-content">
-      <div>MY STACK</div>
+      <div>{{ "stack.text" | translate }}</div>
       <div>
-        <h1>Skill set</h1>
+        <h1>{{ "stack.title" | translate }}</h1>
         <img src="./icons/orange_circle.png" alt="circle" />
       </div>
     </div>
     <div class="skill-set-text-content">
       <img src="./images/skills_paper.png" alt="paper" />
       <p>
-        I am a dedicated frontend developer with a passion for modern web
-        technologies. Always open to learning, I quickly adapt to new
-        challenges. See for yourself what I can do!
+        {{ "stack.description" | translate }}
       </p>
     </div>
   </div>
@@ -24,10 +22,10 @@
         <div class="fontKalam">
           @if (isImageAActive) {
           <img src="./icons/pull_to_peel_arrow.png" alt="arrow" />
-          Pull to <br />
-          peel } @else{
+          {{ "stack.stickerTop" | translate }}
+          {{ "stack.stickerBottom" | translate }} } @else{
           <div class="peeled-sticker-content">
-            Also, im interested in diving into:
+            {{ "stack.stickerPeeled" | translate }}
             <div class="peeled-sticker-imgs">
               <img src="./icons/python_icon.png" alt="icon" />
               <img src="./icons/linux_icon.png" alt="icon" />
