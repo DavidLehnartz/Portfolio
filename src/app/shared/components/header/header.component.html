@@ -23,8 +23,8 @@
     </div>
     <div class="navbar-language-changer">
       <button
-        (click)="setLanguage('en')"
-        (click)="changeLang('en')"
+        (click)="switchLanguage('en')"
+        
         [class.active-language]="isEnglishActive"
       >
         EN
@@ -34,8 +34,8 @@
         <div class="dot" [class.move-right]="!isEnglishActive"></div>
       </div>
       <button
-        (click)="setLanguage('de')"
-        (click)="changeLang('de')"
+        (click)="switchLanguage('de')"
+        
         [class.active-language]="!isEnglishActive"
       >
         DE

@@ -5,8 +5,8 @@
         <div class="hero-top-btn">
           <img src="./icons/waving_hand.png" alt="icon" />
           <button class="fontBricolage">
-            <p>Hello World</p>
-            <span class="hidden">I`m David Lehnartz</span>
+            <p>{{ "hello.title" | translate }}</p>
+            <span class="hidden">{{ "hello.name" | translate }}</span>
           </button>
         </div>
         <div class="hero-text">
@@ -34,18 +34,21 @@
     </div>
     <div class="lower-content">
       <div class="hero-text">
-        <span class="uppercase">D</span>
-        <span class="uppercase">E</span>
-        <span class="uppercase">V</span>
-        <span class="uppercase">E</span>
-        <span class="uppercase">L</span>
-        <span class="uppercase">O</span>
-        <span class="uppercase">P</span>
-        <span class="uppercase">E</span>
-        <span class="uppercase">R</span>
+        <span class="uppercase">{{ "profession.oneLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.twoLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.threeLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.fourLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.fiveLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.sixLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.sevenLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.eightLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.nineLetter" | translate }}</span>
+        <span class="uppercase">{{ "profession.tenLetter" | translate }}</span>
       </div>
       <div class="hero-lower-btn">
-        <button  [routerLink]="['/']" fragment="contact" class="fontBricolage">Get in touch</button>
+        <button [routerLink]="['/']" fragment="contact" class="fontBricolage">
+          {{ "getInTouch.title" | translate }}
+        </button>
       </div>
     </div>
   </div>
@@ -55,8 +58,16 @@
     <img src="./icons/mail.png" alt="icon" />
   </div>
   <div class="hero-profile-responsive hidden">
-    <img class="polaroid-responsive" src="./images/empty_frame.png" alt="polaroid" />
-    <img class="portrait-responsive" src="./images/profile.jpg" alt="portrait" />
+    <img
+      class="polaroid-responsive"
+      src="./images/empty_frame.png"
+      alt="polaroid"
+    />
+    <img
+      class="portrait-responsive"
+      src="./images/profile.jpg"
+      alt="portrait"
+    />
     <div class="profile-name fontKalam">
       David :
       <p>)</p>

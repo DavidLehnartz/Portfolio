@@ -1,14 +1,10 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Injectable } from '@angular/core';
 import { TranslatePipe, TranslateService } from '@ngx-translate/core';
-import translationsEN from '../../../../public/i18n/en.json';
-import translationsDE from '../../../../public/i18n/de.json';
+import translationsEN from '../../../public/i18n/en.json';
+import translationsDE from '../../../public/i18n/de.json';
 
-@Component({
-  selector: 'app-above-the-fold',
-  imports: [RouterLink, TranslatePipe],
-  templateUrl: './above-the-fold.component.html',
-  styleUrl: './above-the-fold.component.scss',
+@Injectable({
+  providedIn: 'root',
 })
 export class AboveTheFoldComponent {
   /* isEnglishActive: boolean = true; */

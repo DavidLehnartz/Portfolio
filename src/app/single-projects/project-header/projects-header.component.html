@@ -5,19 +5,19 @@
     </div>
     <div class="navbar-links fontBricolage">
       <a [routerLink]="['/']" fragment="about_me" class="blackText"
-        >About me
+        >{{ "aboutMe.title" | translate }}
         <img src="./icons/about_me_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="skill_set" class="blackText"
-        >Skills
+        >{{ "skills.title" | translate }}
         <img src="./icons/skills_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="my_craft"
-        >Projects
+        >{{ "projects.title" | translate }}
         <img src="./icons/projects_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="contact"
-        >Contact
+        >{{ "contact.title" | translate }}
         <img src="./icons/contact_hover.png" alt="" />
       </a>
     </div>
@@ -26,7 +26,7 @@
       <img src="./icons/language_toggle_left.png" alt="" />
       <img src="./icons/de_language_button_white.png" alt="" /> -->
       <button
-        (click)="setLanguage('en')"
+        (click)="switchLanguage('en')"
         [class.active-language]="isEnglishActive"
       >
         EN
@@ -36,7 +36,7 @@
         <div class="dot" [class.move-right]="!isEnglishActive"></div>
       </div>
       <button
-        (click)="setLanguage('de')"
+        (click)="switchLanguage('de')"
         [class.active-language]="!isEnglishActive"
       >
         DE

@@ -13,20 +13,19 @@ import translationsDE from '../../../../../public/i18n/de.json';
 })
 export class HeaderComponent {
   isEnglishActive: boolean = true;
-  public currentLang = 'EN';
 
   constructor(private translate: TranslateService) {
     this.translate.setTranslation('en', translationsEN);
     this.translate.setTranslation('de', translationsDE);
     this.translate.setDefaultLang('en');
+
+    const savedLang = localStorage.getItem('app_language') || 'en';
+    this.switchLanguage(savedLang as 'en' | 'de');
   }
 
-  setLanguage(string: 'en' | 'de') {
-    this.isEnglishActive = string === 'en';
-  }
-
-  public changeLang(lang: string) {
+  switchLanguage(lang: 'en' | 'de') {
     this.translate.use(lang);
-    this.currentLang = lang === 'en' ? 'EN' : 'DE';
+    this.isEnglishActive = lang === 'en';
+    localStorage.setItem('app_language', lang);
   }
 }

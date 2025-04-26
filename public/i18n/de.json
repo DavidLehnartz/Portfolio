@@ -8,7 +8,30 @@
     "projects": {
         "title": "Projekte"
     },
+    "profession": {
+        "oneLetter": "E",
+        "twoLetter": "n",
+        "threeLetter": "t",
+        "fourLetter": "w",
+        "fiveLetter": "i",
+        "sixLetter": "c",
+        "sevenLetter": "k",
+        "eightLetter": "l",
+        "nineLetter": "e",
+        "tenLetter": "r"
+    },
     "contact": {
         "title": "Kontakt"
+    },
+    "hello": {
+        "title": "Hallo Welt",
+        "name": "Ich bin David Lehnartz"
+    },
+    "getInTouch": {
+        "title": "Kontaktiere mich"
+    },
+    "whoIs": {
+        "title": "Wer ist David?",
+        "about": "Über mich"
     }
 }
