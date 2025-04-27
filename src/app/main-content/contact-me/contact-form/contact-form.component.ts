@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './contact-form.component.html',
-  styleUrl: './contact-form.component.scss'
+  styleUrl: './contact-form.component.scss',
 })
-export class ContactFormComponent {
-
-}
+export class ContactFormComponent {}

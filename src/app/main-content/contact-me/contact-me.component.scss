@@ -32,7 +32,7 @@ section {
   gap: 16px;
 
   > h2 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     color: #f8f9fa;
   }
@@ -97,6 +97,8 @@ section {
     height: 96px;
   }
 }
+
+/* MEDIA QUERY */
 
 @media (max-width: 800px) {
   /*  section {

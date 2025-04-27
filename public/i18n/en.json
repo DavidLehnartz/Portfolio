@@ -52,8 +52,32 @@
         "text": "MY CRAFT",
         "description": "Here you will find a curated selection of my projects – each one a result of my passion for web development, creativity, and problem-solving. These projects represent my journey of learning, growing, and turning ideas into real, impactful applications.",
         "projectDescription1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
-        "projectDescription2": "",
+        "projectDescription2": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets. Challenging gameplay, atmospheric pixel art, and a melancholic story define Willy’s journey into the unknown.",
         "projectDescription3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. ",
         "detailBtn": "Project details"
+    },
+    "contactForm": {
+        "title": "Ready to work together?",
+        "text": "CONTACT ME",
+        "description": "I`m always open to new opportunities and collaborations. If you have a project in mind or just want to say hi, feel free to reach out!",
+        "name": "What´s your name?",
+        "namePlaceholder": "Your name goes here",
+        "email": "What´s your email?",
+        "emailPlaceholder": "youremail@email.com",
+        "message": "How can i help you?",
+        "messagePlaceholder": "Your message",
+        "privacyTextTop": "I`ve read the",
+        "privacyTextLink": "privacy policy",
+        "privacyTextBottom": "and agree to the processing of my data as outlined.",
+        "submitBtn": "Send",
+        "legalNotice": "Legal Notice"
+    },
+    "testimonial": {
+        "title": "Colleagues` Thoughts",
+        "text": "In their words:",
+        "description1": "David brings not only technical expertise but also a real sense for design and user experience. I'm looking forward to more projects with him!",
+        "description2": "Even during stressful phases, David stays calm and always finds pragmatic solutions. His positive attitude makes working together very enjoyable.",
+        "description3": "Working with David was always straightforward and professional. His creativity and quick understanding greatly enriched our project.",
+        "profession": "Frontend Developer"
     }
 }

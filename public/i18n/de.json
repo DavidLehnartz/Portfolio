@@ -52,8 +52,32 @@
         "text": "MEINE ARBEIT",
         "description": "Hier findest du eine sorgfältig ausgewählte Auswahl meiner Projekte – jedes davon ein Ergebnis meiner Leidenschaft für Webentwicklung, Kreativität und Problemlösung. Diese Projekte spiegeln meinen Weg des Lernens, Wachsens und der Umsetzung von Ideen in reale, wirkungsvolle Anwendungen wider.",
         "projectDescription1": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
-        "projectDescription2": "",
+        "projectDescription2": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das Spieler in eine vergessene, gefährliche Welt entführt. Als junger Zauberer Willy musst du alte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einer zerfallenen Welt voller Geheimnisse finden. Ein forderndes Gameplay, atmosphärische Pixelgrafik und eine melancholische Geschichte prägen Willys Reise ins Unbekannte.",
         "projectDescription3": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.",
         "detailBtn": "Projekt details"
+    },
+    "contactForm": {
+        "title": "Bereit, gemeinsam zu arbeiten?",
+        "text": "Kontaktiere mich",
+        "description": "Ich bin immer offen für neue Möglichkeiten und Kooperationen. Wenn du ein Projekt im Kopf hast oder einfach nur Hallo sagen möchtest, melde dich gerne bei mir!",
+        "name": "Wie lautet dein Name?",
+        "namePlaceholder": "Dein Name",
+        "email": "Wie lautet deine E-Mail?",
+        "emailPlaceholder": "email@email.com",
+        "message": "Wie kann ich dir helfen?",
+        "messagePlaceholder": "Deine Nachricht",
+        "privacyTextTop": "Ich habe die",
+        "privacyTextLink": "Datenschutzrichtlinie",
+        "privacyTextBottom": "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
+        "submitBtn": "Senden",
+        "legalNotice": "Impressum"
+    },
+    "testimonial": {
+        "title": "Meinungen der Kollegen",
+        "text": "In Ihren Worten:",
+        "description1": "David bringt nicht nur technisches Know-how mit, sondern auch ein echtes Gespür für Design und Benutzerfreundlichkeit. Ich freue mich auf weitere Projekte mit ihm!",
+        "description2": "In stressigen Phasen behält David einen kühlen Kopf und findet immer pragmatische Lösungen. Seine positive Art macht die Zusammenarbeit sehr angenehm.",
+        "description3": "Die Zusammenarbeit mit David war jederzeit unkompliziert und professionell. Seine Kreativität und seine schnelle Auffassungsgabe haben unser Projekt enorm bereichert.",
+        "profession": "Frontend Entwickler"
     }
 }

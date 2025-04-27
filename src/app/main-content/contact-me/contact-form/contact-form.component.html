@@ -2,7 +2,7 @@
   <div class="contact-form-wrapper">
     <form>
       <div class="form-content">
-        <label for="name">What´s your name?</label>
+        <label for="name">{{ "contactForm.name" | translate }}</label>
         <input
           type="text"
           id="name"
@@ -13,7 +13,7 @@
         <div class="underline"></div>
       </div>
       <div class="form-content">
-        <label for="email">What´s your email?</label>
+        <label for="email">{{ "contactForm.email" | translate }}</label>
         <input
           type="email"
           id="email"
@@ -24,7 +24,7 @@
         <div class="underline"></div>
       </div>
       <div class="form-content">
-        <label for="message">How can i help you?</label>
+        <label for="message">{{ "contactForm.message" | translate }}</label>
         <textarea
           name="message"
           id="message"
@@ -39,14 +39,14 @@
           <img src="./icons/checkbox_unchecked.png" alt="checkbox" />
         </div>
         <div class="privacy-text">
-          I`ve read the
-          <a href="#">privacy policy</a>
-          and agree to the processing of my data as outlined.
+          {{ "contactForm.privacyTextTop" | translate }}
+          <a href="#">{{ "contactForm.privacyTextLink" | translate }}</a>
+          {{ "contactForm.privacyTextBottom" | translate }}
         </div>
       </div>
       <div class="button-content">
         <img src="./icons/contact_me_arrow.png" alt="logo" />
-        <button>Send</button>
+        <button>{{ "contactForm.submitBtn" | translate }}</button>
       </div>
     </form>
   </div>
