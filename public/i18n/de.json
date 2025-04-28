@@ -79,5 +79,35 @@
         "description2": "In stressigen Phasen behält David einen kühlen Kopf und findet immer pragmatische Lösungen. Seine positive Art macht die Zusammenarbeit sehr angenehm.",
         "description3": "Die Zusammenarbeit mit David war jederzeit unkompliziert und professionell. Seine Kreativität und seine schnelle Auffassungsgabe haben unser Projekt enorm bereichert.",
         "profession": "Frontend Entwickler"
+    },
+    "projectJoin": {
+        "goBack": "Zurück",
+        "description": "Beschreibung",
+        "descriptionText": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen und weise Benutzer sowie Kategorien zu.",
+        "details": "Details zur Umsetzung",
+        "detailsText": "TEST",
+        "duration": "Zeitraum:",
+        "durationText": "5 Wochen",
+        "nextProject": "Nächstes Project"
+    },
+    "projectWilly": {
+        "goBack": "Zurück",
+        "description": "Beschreibung",
+        "descriptionText": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das die Spieler in eine vergessene, gefährliche Welt entführt. Als der junge Zauberer Willy musst du uralte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einem zerfallenden Land voller Geheimnisse entdecken. Herausforderndes Gameplay, stimmungsvolle Pixelgrafik und eine melancholische Geschichte prägen Willys Reise ins Unbekannte.",
+        "details": "Details zur Umsetzung",
+        "detailsText": "TEST",
+        "duration": "Zeitraum:",
+        "durationText": "5 Wochen",
+        "nextProject": "Nächstes Project"
+    },
+    "projectDABubble": {
+        "goBack": "Zurück",
+        "description": "Beschreibung",
+        "descriptionText": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit durch eine intuitive Benutzeroberfläche, Echtzeitnachrichten und eine leistungsstarke Kanalorganisation.",
+        "details": "Details zur Umsetzung",
+        "detailsText": "TEST",
+        "duration": "Zeitraum:",
+        "durationText": "4 Wochen",
+        "nextProject": "Nächstes Project"
     }
 }

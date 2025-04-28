@@ -6,7 +6,7 @@
       <img src="./icons/back_arrow_orange.png" alt="arrow" />
     </div>
     <div [routerLink]="['/']" fragment="my_craft" class="go-back-text">
-      Go Back
+      {{ "projectJoin.goBack" | translate }}
     </div>
   </div>
   <div class="project-wrapper">
@@ -16,23 +16,20 @@
         <img src="./icons/blue_stripe.png" alt="stripe" />
       </div>
       <div class="description">
-        <h2>Description</h2>
+        <h2>{{ "projectJoin.description" | translate }}</h2>
         <p>
-          Task manager inspired by the Kanban System. Create and organize tasks
-          using drag and drop functions, assign users and categories.
+          {{ "projectJoin.descriptionText" | translate }}
         </p>
       </div>
       <div class="details">
-        <h2>Implementation Details</h2>
+        <h2>{{ "projectJoin.details" | translate }}</h2>
         <p>
-          Short text that describes your role or the workflow for this specific
-          project. Let a recruiter know more about your knowledge and ability to
-          work independently or collaboratively in a structured way.
+          {{ "projectJoin.detailsText" | translate }}
         </p>
       </div>
       <div class="duration">
-        <h2>Duration:</h2>
-        <p>5 Weeks</p>
+        <h2>{{ "projectJoin.duration" | translate }}</h2>
+        <p>{{ "projectJoin.durationText" | translate }}</p>
       </div>
       <div class="skills-list">
         <div class="skill">
@@ -69,10 +66,12 @@
           <div class="next-project-img">
             <img src="./icons/back_arrow_orange.png" alt="arrow" />
           </div>
-          <div class="go-back-text">Go Back</div>
+          <div class="go-back-text">{{ "projectJoin.goBack" | translate }}</div>
         </div>
         <div class="next-project">
-          <div class="next-project-text">Next Project</div>
+          <div class="next-project-text">
+            {{ "projectJoin.nextProject" | translate }}
+          </div>
           <div class="next-project-img">
             <img src="./icons/next_arrow_yellow.png" alt="arrow" />
           </div>

@@ -6,7 +6,7 @@
         <input
           type="text"
           id="name"
-          placeholder="Your name goes here"
+          [placeholder]="'contactForm.namePlaceholder' | translate"
           required
           autocomplete="off"
         />
@@ -17,7 +17,7 @@
         <input
           type="email"
           id="email"
-          placeholder="youremail@email.com"
+          [placeholder]="'contactForm.emailPlaceholder' | translate"
           required
           autocomplete="off"
         />
@@ -28,7 +28,7 @@
         <textarea
           name="message"
           id="message"
-          placeholder="Your message"
+          [placeholder]="'contactForm.messagePlaceholder' | translate"
           required
           rows="1"
         ></textarea>

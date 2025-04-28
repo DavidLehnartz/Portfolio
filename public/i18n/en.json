@@ -79,5 +79,35 @@
         "description2": "Even during stressful phases, David stays calm and always finds pragmatic solutions. His positive attitude makes working together very enjoyable.",
         "description3": "Working with David was always straightforward and professional. His creativity and quick understanding greatly enriched our project.",
         "profession": "Frontend Developer"
+    },
+    "projectJoin": {
+        "goBack": "Go Back",
+        "description": "Description",
+        "descriptionText": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "details": "Implementation Details",
+        "detailsText": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+        "duration": "Duration:",
+        "durationText": "5 Weeks",
+        "nextProject": "Next Project"
+    },
+    "projectWilly": {
+        "goBack": "Go Back",
+        "description": "Description",
+        "descriptionText": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets. Challenging gameplay, atmospheric pixel art, and a melancholic story define Willy’s journey into the unknown.",
+        "details": "Implementation Details",
+        "detailsText": "TEST",
+        "duration": "Duration:",
+        "durationText": "5 Weeks",
+        "nextProject": "Next Project"
+    },
+    "projectDABubble": {
+        "goBack": "Go Back",
+        "description": "Description",
+        "descriptionText": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+        "details": "Implementation Details",
+        "detailsText": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+        "duration": "Duration:",
+        "durationText": "5 Weeks",
+        "nextProject": "Next Project"
     }
 }
