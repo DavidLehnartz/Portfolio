@@ -36,6 +36,8 @@ section {
       left: 50%;
       transform: translate(-50%, -50%);
       display: none;
+      width: 105px;
+      height: 40px;
     }
 
     &:hover img {
@@ -63,6 +65,8 @@ section {
     > img {
       position: absolute;
       display: none;
+      width: 32px;
+      height: 32px;
     }
 
     &:hover > img {
@@ -70,7 +74,7 @@ section {
     }
 
     &.active-language {
-      color: #00d1ff; // z.B. ein Cyan-Ton für aktive Sprache
+      color: #ea9019; // z.B. ein Cyan-Ton für aktive Sprache
 
       > img {
         display: block;
@@ -93,7 +97,8 @@ button:active {
   height: 8px;
   border: solid;
   border-color: #f8f9fa;
-  background-color: #f87a55;
+  background-color: #ea9019;
+  background-color: #279f5f;
   border-radius: 8px;
 }
 
@@ -104,7 +109,7 @@ button:active {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-color: #35f;
+  background-color: #1976ea;
   border: solid;
   border-color: #f8f9fa;
   border-radius: 50%;
@@ -121,6 +126,87 @@ button:active {
 
 .active-language {
   color: #f87a55;
+}
+
+.burger-menu-responsive {
+  cursor: pointer;
+}
+
+.burger-menu-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  max-width: 365px;
+  height: 560px;
+  z-index: 999;
+  background-image: url("../../../../../public/images/atf_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.burger-header {
+  @include dFlex($jContent: space-between);
+  /* padding: 16px; */
+  width: 100%;
+  margin-top: 16px;
+
+  > img:nth-child(1) {
+    width: 48px;
+    height: 48px;
+    margin-left: 16px;
+   
+  }
+
+  > img:nth-child(2) {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.burger-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  > a {
+    color: #f8f9fa;
+    font-size: 18px;
+    font-weight: 700;
+
+    &:hover {
+      color: #ea9019;
+    }
+  }
+}
+
+.burger-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding-bottom: 65px;
+
+  > img {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #f8f9fa;
+    border-radius: 100px;
+    padding: 4px;
+  }
 }
 
 /* MEDIA QUERY */

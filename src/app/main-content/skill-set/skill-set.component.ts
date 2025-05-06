@@ -9,9 +9,9 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './skill-set.component.scss',
 })
 export class SkillSetComponent {
-  firstImage: string = './images/pull_to_peel_sticker.png';
-  lastImage: string = './images/pull_to_peel_uncovered_sticker.png';
-  transImage: string = './images/pull_to_peel_half_sticker.png';
+  firstImage: string = './images/pull_to_peel_sticker1.png';
+  lastImage: string = './images/pull_to_peel_uncovered_sticker1.png';
+  transImage: string = './images/pull_to_peel_half_sticker1.png';
   currentImage: string = this.firstImage;
   isImageAActive: boolean = true;
   timeout: number = 50;

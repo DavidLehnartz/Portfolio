@@ -96,7 +96,19 @@ textarea {
   margin-top: 8px;
 }
 
-.checkbox {
+.custom-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .privacy-text {
@@ -105,8 +117,11 @@ textarea {
   color: #f8f9fa;
 
   > a {
-    color: #f7c518;
     color: #3355ff;
+
+    &:hover {
+      color: #f7c518;
+    }
   }
 }
 
@@ -136,6 +151,51 @@ button {
     opacity: 1;
     /* transition: all 0.3s ease-in-out; */
     transform: scale(1.05);
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+input.error::placeholder,
+textarea.error::placeholder {
+  color: red;
+}
+
+.privacy-error {
+  color: red;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px ;
+}
+
+.overlay{
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* halbtransparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+}
+
+.overlay-content {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s ease-out;
+
+  >p{
+    color: #3355ff;
   }
 }
 

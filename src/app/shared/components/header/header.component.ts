@@ -13,6 +13,8 @@ import translationsDE from '../../../../../public/i18n/de.json';
 })
 export class HeaderComponent {
   isEnglishActive: boolean = true;
+  isHovered: boolean = false;
+  isBurgerMenuOpen = false;
 
   constructor(private translate: TranslateService) {
     this.translate.setTranslation('en', translationsEN);
@@ -27,5 +29,30 @@ export class HeaderComponent {
     this.translate.use(lang);
     this.isEnglishActive = lang === 'en';
     localStorage.setItem('app_language', lang);
+  }
+
+  getBurgerMenuImgOpen(): string {
+    if (this.isHovered) {
+      return './icons/burger_hover.png';
+    } else {
+      return './icons/burger_default.png';
+    }
+  }
+
+  getBurgerMenuImgClose(): string {
+    if (this.isHovered && this.isBurgerMenuOpen) {
+      return './icons/burger_close_hover.png';
+    } else {
+      return './icons/burger_close.png';
+    }
+  }
+
+  toggleBurgerMenu() {
+    console.log('Toggle clicked');
+    this.isBurgerMenuOpen = !this.isBurgerMenuOpen;
+
+    if (!this.isBurgerMenuOpen) {
+      this.isHovered = false; // ← Hover-Zustand beim Schließen zurücksetzen
+    }
   }
 }

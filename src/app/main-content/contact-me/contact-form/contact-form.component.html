@@ -1,12 +1,15 @@
 <section class="fontBricolage">
   <div class="contact-form-wrapper">
-    <form>
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
       <div class="form-content">
         <label for="name">{{ "contactForm.name" | translate }}</label>
         <input
+          [(ngModel)]="contactData.name"
+          name="name"
           type="text"
           id="name"
-          [placeholder]="'contactForm.namePlaceholder' | translate"
+          [placeholder]="namePlaceholder | translate"
+          [class.error]="showMessageError"
           required
           autocomplete="off"
         />
@@ -15,10 +18,14 @@
       <div class="form-content">
         <label for="email">{{ "contactForm.email" | translate }}</label>
         <input
+          [(ngModel)]="contactData.email"
+          name="email"
           type="email"
           id="email"
-          [placeholder]="'contactForm.emailPlaceholder' | translate"
+          [placeholder]="emailPlaceholder | translate"
+          [class.error]="showMessageError"
           required
+          pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           autocomplete="off"
         />
         <div class="underline"></div>
@@ -26,28 +33,54 @@
       <div class="form-content">
         <label for="message">{{ "contactForm.message" | translate }}</label>
         <textarea
+          [(ngModel)]="contactData.message"
           name="message"
+          type="text"
           id="message"
-          [placeholder]="'contactForm.messagePlaceholder' | translate"
+          [placeholder]="messagePlaceholder | translate"
+          [class.error]="showMessageError"
           required
           rows="1"
         ></textarea>
         <div class="underline"></div>
       </div>
-      <div class="privacy-content">
-        <div class="checkbox">
-          <img src="./icons/checkbox_unchecked.png" alt="checkbox" />
-        </div>
+
+      <label
+        class="custom-checkbox"
+        (mouseenter)="isHovered = true"
+        (mouseleave)="isHovered = false"
+      >
+        <input
+          type="checkbox"
+          [(ngModel)]="contactData.privacy"
+          name="privacy"
+          required
+          hidden
+        />
+        <img class="checkbox-img" [src]="getCheckboxImage()" alt="checkbox" />
         <div class="privacy-text">
           {{ "contactForm.privacyTextTop" | translate }}
           <a href="#">{{ "contactForm.privacyTextLink" | translate }}</a>
           {{ "contactForm.privacyTextBottom" | translate }}
         </div>
-      </div>
+      </label>
+      @if(!this.contactData.privacy){
+      <div class="privacy-error">{{ privacyPlaceholder }}</div>
+      }
       <div class="button-content">
         <img src="./icons/contact_me_arrow.png" alt="logo" />
-        <button>{{ "contactForm.submitBtn" | translate }}</button>
+        <button type="submit">
+          {{ "contactForm.submitBtn" | translate }}
+        </button>
       </div>
     </form>
   </div>
+  @if (this.showSuccessOverlay) {
+  <div class="overlay">
+    <div class="overlay-content">
+      <p>TESTETSTESTETSTEST</p>
+    </div>
+  </div>
+  }
+  <!-- <app-overlay></app-overlay> -->
 </section>

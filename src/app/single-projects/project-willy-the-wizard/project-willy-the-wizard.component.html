@@ -63,10 +63,12 @@
           <div class="next-project-img">
             <img src="./icons/back_arrow_orange.png" alt="arrow" />
           </div>
-          <div class="go-back-text">{{ "projectWilly.goBack" | translate }}</div>
+          <div class="go-back-text">
+            {{ "projectWilly.goBack" | translate }}
+          </div>
         </div>
         <div class="next-project">
-          <div class="next-project-text">
+          <div [routerLink]="'/daBubble'" class="next-project-text">
             {{ "projectWilly.nextProject" | translate }}
           </div>
           <div class="next-project-img">
