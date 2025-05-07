@@ -59,7 +59,8 @@ export class ContactFormComponent {
     } else if (
       this.contactData.name === '' ||
       this.contactData.email === '' ||
-      this.contactData.message === ''
+      this.contactData.message === '' ||
+      this.contactData.privacy === false
     ) {
       this.showMessageError = true;
       this.namePlaceholder = 'You forgot to fill in your name!';

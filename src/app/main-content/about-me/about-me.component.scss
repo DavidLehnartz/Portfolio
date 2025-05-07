@@ -2,7 +2,7 @@
 
 section {
   @include dFlex();
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 h2 {
@@ -22,6 +22,7 @@ p {
   gap: 32px;
   padding: 144px 120px;
   max-width: 1440px;
+  /* height: 100vh; */
 }
 
 .about-me-content-left {
@@ -31,22 +32,23 @@ p {
 
 .location-info-top {
   position: relative;
-  margin-bottom: -60px;
+  margin-bottom: -90px;
   z-index: 999;
 
   > img {
     width: 560px;
-    height: 152px;
+    /*  height: 152px; */
+    transform: rotate(4deg);
   }
 
   > div {
     display: flex;
     position: absolute;
-    top: 45px;
+    top: 60px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    transform: rotate(-4deg);
+    transform: rotate(-2deg);
     color: #f8f9fa;
     font-weight: 400;
     font-size: 24px;
@@ -61,18 +63,19 @@ p {
 
 .location-info-center {
   position: relative;
-  margin-bottom: -50px;
+  margin-bottom: -65px;
   z-index: 1;
 
   > img {
     width: 560px;
-    height: 152px;
+    transform: rotate(-2deg);
+    /*   height: 152px; */
   }
 
   > div {
     display: flex;
     position: absolute;
-    top: 55px;
+    top: 65px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -80,10 +83,11 @@ p {
     font-weight: 400;
     font-size: 24px;
     gap: 16px;
+    transform: rotate(4deg);
 
     > img {
       width: 40px;
-      height: 40px;
+      /* height: 40px; */
     }
   }
 }
@@ -93,6 +97,7 @@ p {
 
   > img {
     width: 560px;
+    transform: rotate(-2deg);
     height: 152px;
   }
 
@@ -103,7 +108,7 @@ p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    transform: rotate(7deg);
+    transform: rotate(-1deg);
     color: #f8f9fa;
     font-weight: 400;
     font-size: 24px;
@@ -121,8 +126,8 @@ p {
   flex-direction: column;
   gap: 48px;
 
-  >div:nth-child(2){
-    >p{
+  > div:nth-child(2) {
+    > p {
       font-size: 20px;
       font-weight: 400;
     }
@@ -148,7 +153,7 @@ button {
   &:hover {
     bottom: 30px;
     right: 30px;
-    background-color: #3355ff;
+    background-color: #1976ea;
     box-shadow: 0px 0px #f8f9fa;
     opacity: 1;
     color: #f8f9fa;
@@ -158,6 +163,10 @@ button {
 }
 
 @media (max-width: 1160px) {
+  section {
+    height: auto;
+  }
+
   .about-me-wrapper {
     flex-direction: column-reverse;
     /* padding: 144px 60px; */
@@ -179,21 +188,44 @@ button {
 }
 
 @media (max-width: 570px) {
+  .about-me-wrapper {
+    height: auto;
+  }
+
   .location-info-top {
+    > div {
+      top: 45px;
+    }
+
     > img {
       width: 400px;
+      height: 152px;
     }
   }
 
   .location-info-center {
+    margin-bottom: -55px;
+
+    > div {
+      top: 58px;
+    }
+
     > img {
       width: 400px;
+      height: 152px;
     }
   }
 
   .location-info-bottom {
+    transform: rotate(-2deg);
+
+    > div {
+      top: 38px;
+    }
+
     > img {
       width: 400px;
+      height: 120px;
     }
   }
 }
@@ -235,40 +267,60 @@ button {
   }
 
   .location-info-top {
-    margin-bottom: -50px;
+    margin-bottom: -60px;
+
     > div {
       top: 45px;
-      transform: rotate(-8deg);
+      transform: rotate(-4deg);
       font-size: 20px;
       gap: 8px;
+
+      > img {
+        width: 32px;
+        height: 32px;
+      }
     }
 
     > img {
-      width: 315px;
+      width: 310px;
     }
   }
 
   .location-info-center {
+    margin-bottom: -45px;
+
     > div {
-      top: 25px;
+      top: 30px;
       font-size: 20px;
       gap: 8px;
+
+      > img {
+        width: 32px;
+        height: 32px;
+      }
     }
+
     > img {
-      width: 315px;
+      width: 310px;
       height: 100px;
     }
   }
 
   .location-info-bottom {
     > div {
-      top: 55px;
+      top: 40px;
       font-size: 20px;
-      transform: rotate(10deg);
+      transform: rotate(0deg);
       gap: 8px;
+
+      > img {
+        width: 32px;
+        height: 32px;
+      }
     }
+
     > img {
-      width: 315px;
+      width: 310px;
     }
   }
 }

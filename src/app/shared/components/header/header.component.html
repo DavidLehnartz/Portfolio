@@ -6,19 +6,19 @@
     <div class="navbar-links fontBricolage">
       <a [routerLink]="['/']" fragment="about_me">
         {{ "aboutMe.title" | translate }}
-        <img src="./icons/about_me_hover1.png" alt="" />
+        <img src="./icons/about_me_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="skill_set"
         >{{ "skills.title" | translate }}
-        <img src="./icons/skills_hover1.png" alt="" />
+        <img src="./icons/skills_hover.png" alt="" />
       </a>
       <a [routerLink]="['/']" fragment="my_craft"
         >{{ "projects.title" | translate }}
-        <img src="./icons/projects_hover1.png" alt="icon" />
+        <img src="./icons/projects_hover.png" alt="icon" />
       </a>
       <a [routerLink]="['/']" fragment="contact"
         >{{ "contact.title" | translate }}
-        <img src="./icons/contact_hover1.png" alt="icon" />
+        <img src="./icons/contact_hover.png" alt="icon" />
       </a>
     </div>
     <div class="navbar-language-changer">
@@ -27,7 +27,7 @@
         [class.active-language]="isEnglishActive"
       >
         EN
-        <img src="./icons/language_hover_frame1.png" alt="icon" />
+        <img src="./icons/language_hover_frame.png" alt="icon" />
       </button>
       <div class="line">
         <div class="dot" [class.move-right]="!isEnglishActive"></div>
@@ -37,7 +37,7 @@
         [class.active-language]="!isEnglishActive"
       >
         DE
-        <img src="./icons/language_hover_frame1.png" alt="frame" />
+        <img src="./icons/language_hover_frame.png" alt="frame" />
       </button>
     </div>
     <div class="burger-menu-responsive">

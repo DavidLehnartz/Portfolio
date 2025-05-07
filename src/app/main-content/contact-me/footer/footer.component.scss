@@ -7,7 +7,7 @@
 
   margin: 0px auto;
   padding: 0px 120px;
-  padding-bottom: 56px;
+  padding-bottom: 32px;
 }
 
 .footer-logo-text {
@@ -91,7 +91,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover {
-      background-color: #3355ff;
+      background-color: #1976ea;
       border-radius: 100px;
       padding: 12px 24px;
     }
@@ -121,7 +121,7 @@
 @media (max-width: 800px) {
   .footer-wrapper {
     padding: 0px 16px;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   }
 
   .footer-logo-text {
@@ -148,9 +148,9 @@
 }
 
 @media (min-width: 800px) {
-  .footer-wrapper {
+  /* .footer-wrapper {
     padding-bottom: 56px;
-  }
+  } */
 
   .footer-text {
     > a {

@@ -61,7 +61,11 @@ section {
     color: #f8f9fa;
     cursor: pointer;
     transition: color 0.5s;
+    padding: 8px;
 
+    &:hover {
+      color: #1976ea;
+    }
     > img {
       position: absolute;
       display: none;
@@ -74,7 +78,7 @@ section {
     }
 
     &.active-language {
-      color: #ea9019; // z.B. ein Cyan-Ton für aktive Sprache
+      color: #1976ea; // z.B. ein Cyan-Ton für aktive Sprache
 
       > img {
         display: block;
@@ -83,14 +87,14 @@ section {
   }
 }
 
-button:active {
+/* button:active {
   color: #f87a55;
 
   &:hover img {
     display: none;
   }
 }
-
+ */
 .line {
   position: relative;
   width: 32px;
@@ -98,7 +102,7 @@ button:active {
   border: solid;
   border-color: #f8f9fa;
   background-color: #ea9019;
-  background-color: #279f5f;
+ /*  background-color: #279f5f; */
   border-radius: 8px;
 }
 
@@ -125,7 +129,9 @@ button:active {
 }
 
 .active-language {
-  color: #f87a55;
+ /*  color: #f87a55; */
+  color: #1976ea;
+  
 }
 
 .burger-menu-responsive {
@@ -160,7 +166,6 @@ button:active {
     width: 48px;
     height: 48px;
     margin-left: 16px;
-   
   }
 
   > img:nth-child(2) {
