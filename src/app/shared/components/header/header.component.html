@@ -76,13 +76,13 @@
         >{{ "contact.title" | translate }}
       </a>
     </div>
-    <div class="navbar-language-changer">
+    <div class="navbar-language-changer-burger">
       <button
         (click)="switchLanguage('en')"
         [class.active-language]="isEnglishActive"
       >
         EN
-        <img src="./icons/language_hover_frame1.png" alt="icon" />
+        <img src="./icons/language_hover_frame.png" alt="icon" />
       </button>
       <div class="line">
         <div class="dot" [class.move-right]="!isEnglishActive"></div>
@@ -92,7 +92,7 @@
         [class.active-language]="!isEnglishActive"
       >
         DE
-        <img src="./icons/language_hover_frame1.png" alt="frame" />
+        <img src="./icons/language_hover_frame.png" alt="frame" />
       </button>
     </div>
     <div class="burger-footer">

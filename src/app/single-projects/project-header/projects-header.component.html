@@ -22,9 +22,6 @@
       </a>
     </div>
     <div class="navbar-language-changer">
-      <!-- <img src="./icons/en_language_button_orange.png" alt="" />
-      <img src="./icons/language_toggle_left.png" alt="" />
-      <img src="./icons/de_language_button_white.png" alt="" /> -->
       <button
         (click)="switchLanguage('en')"
         [class.active-language]="isEnglishActive"
@@ -44,7 +41,69 @@
       </button>
     </div>
     <div class="burger-menu-responsive">
-      <img src="./icons/burger_default.png" alt="icon" />
+      <img
+        (click)="toggleBurgerMenu()"
+        (mouseenter)="isHovered = true"
+        (mouseleave)="isHovered = false"
+        [src]="getBurgerMenuImgOpen()"
+        alt="icon"
+      />
     </div>
   </div>
+  @if (this.isBurgerMenuOpen) {
+  <div class="burger-menu-content fontBricolage">
+    <div class="burger-header">
+      <img src="./logo/fox_logo.png" alt="logo" />
+      <img
+        (click)="toggleBurgerMenu()"
+        (mouseenter)="isHovered = true"
+        (mouseleave)="isHovered = false"
+        [src]="getBurgerMenuImgClose()"
+        alt="close"
+      />
+    </div>
+    <div class="burger-center">
+      <a [routerLink]="['/']" fragment="about_me">
+        {{ "aboutMe.title" | translate }}
+      </a>
+      <a [routerLink]="['/']" fragment="skill_set"
+        >{{ "skills.title" | translate }}
+      </a>
+      <a [routerLink]="['/']" fragment="my_craft"
+        >{{ "projects.title" | translate }}
+      </a>
+      <a [routerLink]="['/']" fragment="contact"
+        >{{ "contact.title" | translate }}
+      </a>
+    </div>
+    <div class="navbar-language-changer-burger">
+      <button
+        (click)="switchLanguage('en')"
+        [class.active-language]="isEnglishActive"
+      >
+        EN
+        <img src="./icons/language_hover_frame.png" alt="icon" />
+      </button>
+      <div class="line">
+        <div class="dot" [class.move-right]="!isEnglishActive"></div>
+      </div>
+      <button
+        (click)="switchLanguage('de')"
+        [class.active-language]="!isEnglishActive"
+      >
+        DE
+        <img src="./icons/language_hover_frame.png" alt="frame" />
+      </button>
+    </div>
+    <div class="burger-footer">
+      <img src="./icons/git_hub.png" alt="icon" />
+      <img src="./icons/linked_in.png" alt="icon" />
+      <img src="./icons/mail.png" alt="icon" />
+    </div>
+  </div>
+  }
 </section>
+
+<!-- <div class="burger-menu-responsive">
+      <img src="./icons/burger_default.png" alt="icon" />
+    </div> -->

@@ -59,7 +59,7 @@
     "contactForm": {
         "title": "Bereit, gemeinsam zu arbeiten?",
         "text": "Kontaktiere mich",
-        "description": "Ich bin immer offen für neue Möglichkeiten und Kooperationen. Wenn du ein Projekt im Kopf hast oder einfach nur Hallo sagen möchtest, melde dich gerne bei mir!",
+        "description": "Ich bin offen für neue Herausforderungen, spannende Projekte und kreative Zusammenarbeit. Besonders begeistern mich moderne Webtechnologien, saubere Code-Strukturen und nutzerfreundliche Anwendungen. Wenn du ein Projekt planst, jemanden zum Austauschen suchst oder einfach nur Hallo sagen möchtest, freue ich mich über deine Nachricht. Vielleicht entsteht daraus ja etwas Großartiges!",
         "name": "Wie lautet dein Name?",
         "namePlaceholder": "Dein Name",
         "email": "Wie lautet deine E-Mail?",
@@ -70,12 +70,13 @@
         "privacyTextLink": "Datenschutzrichtlinie",
         "privacyTextBottom": "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
         "submitBtn": "Senden",
-        "legalNotice": "Impressum"
+        "legalNotice": "Impressum",
+        "stickerText": " • David Lehnartz • Frontend-Entwickler • David Lehnartz • Frontend-Entwickler"
     },
     "testimonial": {
         "title": "Meinungen der Kollegen",
         "text": "In Ihren Worten:",
-        "description1": "David bringt nicht nur technisches Know-how mit, sondern auch ein echtes Gespür für Design und Benutzerfreundlichkeit. Ich freue mich auf weitere Projekte mit ihm!",
+        "description1": "David bringt nicht nur technisches Know-how mit, sondern auch ein feines Gespür für Design und Nutzererlebnis. Die Zusammenarbeit war professionell, angenehm und effizient. Ich freue mich auf weitere gemeinsame Projekte!",
         "description2": "In stressigen Phasen behält David einen kühlen Kopf und findet immer pragmatische Lösungen. Seine positive Art macht die Zusammenarbeit sehr angenehm.",
         "description3": "Die Zusammenarbeit mit David war jederzeit unkompliziert und professionell. Seine Kreativität und seine schnelle Auffassungsgabe haben unser Projekt enorm bereichert.",
         "profession": "Frontend Entwickler"
@@ -109,5 +110,8 @@
         "duration": "Zeitraum:",
         "durationText": "4 Wochen",
         "nextProject": "Nächstes Project"
+    },
+    "stickerText": {
+        "stickerText": "David Lehnartz • Frontend-Entwickler • David Lehnartz • Frontend-Entwickler"
     }
 }

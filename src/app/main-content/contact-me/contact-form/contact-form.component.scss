@@ -169,11 +169,11 @@ textarea.error::placeholder {
   color: red;
   font-size: 16px;
   font-weight: 400;
-  margin: 16px ;
+  margin: 16px;
 }
 
-.overlay{
- position: fixed;
+.overlay {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -183,7 +183,6 @@ textarea.error::placeholder {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-
 }
 
 .overlay-content {
@@ -191,10 +190,10 @@ textarea.error::placeholder {
   padding: 2rem 3rem;
   border-radius: 12px;
   font-size: 1.2rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.4s ease-out;
 
-  >p{
+  > p {
     color: #1976ea;
   }
 }

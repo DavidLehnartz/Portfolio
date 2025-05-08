@@ -1,7 +1,27 @@
 <section class="fontBricolage">
   <div class="contact-me-wrapper">
     <div class="content-logo-responsive">
-      <img src="./icons/contact_me_sticker.png" alt="logo" />
+
+      <svg viewBox="0 0 200 200" class="circle-text-responsive">
+        <defs>
+          <path
+            id="circlePath"
+            d="M 100, 100 m -84, 0 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0"
+          />
+        </defs>
+        <text
+          font-size="10"
+          fill="#f8f9fa"
+          font-family="Bricolage Grotesque, sans-serif"
+          letter-spacing="2"
+        >
+          <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+            {{ "contactForm.stickerText" | translate }}
+          </textPath>
+        </text>
+      </svg>
+
+      <img src="./icons/contact_me_sticker_blue.png" alt="logo" />
       <div class="inner-logo-responsive">
         <img src="./logo/fox_logo.png" alt="logo" />
       </div>
@@ -22,7 +42,25 @@
     </div>
     <div class="contact-me-right-content">
       <div class="content-logo">
-        <img src="./icons/contact_me_sticker.png" alt="logo" />
+        <svg viewBox="0 0 200 200" class="circle-text">
+          <defs>
+            <path
+              id="circlePath"
+              d="M 100, 100 m -84, 0 a 84,84 0 1,1 168,0 a 84,84 0 1,1 -168,0"
+            />
+          </defs>
+          <text
+            font-size="10"
+            fill="#f8f9fa"
+            font-family="Bricolage Grotesque, sans-serif"
+            letter-spacing="2"
+          >
+            <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+              {{ "contactForm.stickerText" | translate }}
+            </textPath>
+          </text>
+        </svg>
+        <img src="./icons/contact_me_sticker_blue.png" alt="logo" />
         <div class="inner-logo">
           <img src="./logo/fox_logo.png" alt="logo" />
         </div>

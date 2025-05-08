@@ -59,7 +59,7 @@
     "contactForm": {
         "title": "Ready to work together?",
         "text": "CONTACT ME",
-        "description": "I`m always open to new opportunities and collaborations. If you have a project in mind or just want to say hi, feel free to reach out!",
+        "description": "I'm open to new challenges, exciting projects, and creative collaborations. I'm especially passionate about modern web technologies, clean code structures, and user-friendly applications. If you're planning a project, looking for someone to exchange ideas with, or just want to say hi – feel free to get in touch. Who knows, maybe something great will come out of it!",
         "name": "What´s your name?",
         "namePlaceholder": "Your name goes here",
         "email": "What´s your email?",
@@ -70,12 +70,13 @@
         "privacyTextLink": "privacy policy",
         "privacyTextBottom": "and agree to the processing of my data as outlined.",
         "submitBtn": "Send",
-        "legalNotice": "Legal Notice"
+        "legalNotice": "Legal Notice",
+        "stickerText": " • David Lehnartz • Frontend-Developer • David Lehnartz • Frontend-Developer"
     },
     "testimonial": {
         "title": "Colleagues` Thoughts",
         "text": "In their words:",
-        "description1": "David brings not only technical expertise but also a real sense for design and user experience. I'm looking forward to more projects with him!",
+        "description1": "David combines technical expertise with a strong sense for design and user experience. Working with him was professional, smooth, and efficient. I'm looking forward to more projects together!",
         "description2": "Even during stressful phases, David stays calm and always finds pragmatic solutions. His positive attitude makes working together very enjoyable.",
         "description3": "Working with David was always straightforward and professional. His creativity and quick understanding greatly enriched our project.",
         "profession": "Frontend Developer"

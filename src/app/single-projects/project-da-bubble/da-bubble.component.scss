@@ -1,212 +1,5 @@
 @use "./../../mixins.scss" as *;
 
-/* section {
-  width: 100%;
-  height: 100vh;
-  background-image: url("./../../../../public/images/project_bg.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-}
-
-.project-wrapper {
-  display: flex;
-  justify-content: space-between;
-  // flex-direction: column; 
-  max-width: 1920px;
-  margin: 0px auto;
-  padding: 0px 120px;
-}
-
-.project-left-content {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  width: 45%;
-}
-
-.go-back {
-  display: flex;
-  max-width: 1920px;
-  margin: 0px auto;
-  padding-top: 120px;
-  padding-bottom: 48px;
-  padding-left: 72px;
-  padding-right: 72px;
-  gap: 10px;
-}
-
-.go-back-img {
-  width: 24px;
-  height: 24px;
-
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.go-back-text {
-  &:hover {
-    cursor: pointer;
-    color: #3355ff;
-  }
-}
-
-.name {
-  display: flex;
-  flex-direction: column;
-
-  > h1 {
-    font-size: 64px;
-    font-weight: 700;
-  }
-
-  > img {
-    width: 315px;
-    height: 20px;
-  }
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  > h2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  > p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-.details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  > h2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  > p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-.duration {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-
-  > h2 {
-    font-size: 24px;
-    font-weight: 700;
-  }
-
-  > p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-.skills-list {
-  display: flex;
-  gap: 8px;
-}
-
-.skill {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  > img {
-    width: 24px;
-    height: 24px;
-  }
-
-  > p {
-    font-size: 18px;
-    font-weight: 400;
-  }
-}
-
-.project-right-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  // width: 50% 
-
-  > img {
-    width: 560px;
-    height: 400px;
-    object-fit: contain;
-  }
-}
-
-.project-img {
-  display: flex;
-  justify-content: end;
-}
-
-.sticker {
-  position: absolute;
-  top: 140px;
-  right: -60px;
-
-  > img {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-.buttons {
-  @include dFlex($jContent: end, $gap: 32px);
-}
-
-.button {
-  @include btnStyle();
-  box-shadow: 2px 4px #f8f9fa;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.next-project {
-  display: flex;
-  justify-content: end;
-  gap: 8px;
-}
-
-.next-project-text {
-  color: white;
-  font-size: 18px;
-  font-weight: 700;
-
-  &:hover {
-    cursor: pointer;
-    color: #3355ff;
-  }
-}
-
-.next-project-img {
-  display: flex;
-
-  > img {
-    width: 24px;
-    height: 24px;
-  }
-} */
-
-/* TEST */
-
 section {
   width: 100%;
   height: 100vh;
@@ -262,7 +55,7 @@ section {
 .go-back-text {
   &:hover {
     cursor: pointer;
-    color: #3355ff;
+    color: #1976ea;
   }
 }
 
@@ -399,8 +192,8 @@ section {
   font-weight: 500;
 
   &:hover {
-    background-color: #3355ff;
-    transition: all 0.5s ease-in-out;
+    background-color: #1976ea;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px #f8f9fa;
     transform: scale(1.05);
   }
@@ -434,7 +227,7 @@ section {
 
   &:hover {
     cursor: pointer;
-    color: #3355ff;
+    color: #1976ea;
   }
 }
 
