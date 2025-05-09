@@ -5,13 +5,9 @@ import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
-
-    
-  ],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls:  ['./app.component.scss'],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   title = 'portfolio';

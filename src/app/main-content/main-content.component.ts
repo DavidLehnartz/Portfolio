@@ -7,7 +7,6 @@ import { SkillSetComponent } from './skill-set/skill-set.component';
 import { MyCraftComponent } from './my-craft/my-craft.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
-import { FooterComponent } from "./contact-me/footer/footer.component";
 
 @Component({
   selector: 'app-main-content',
@@ -19,13 +18,10 @@ import { FooterComponent } from "./contact-me/footer/footer.component";
     MyCraftComponent,
     TestimonialsComponent,
     ContactMeComponent,
-    FooterComponent
-],
+  ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss',
 })
-/* export class MainContentComponent {} */
-
 export class MainContentComponent implements AfterViewInit {
   constructor(private route: ActivatedRoute) {}
 
@@ -39,7 +35,7 @@ export class MainContentComponent implements AfterViewInit {
           } else {
             console.warn('Element mit Fragment nicht gefunden:', fragment);
           }
-        }, 0); // gibt Angular Zeit, DOM zu rendern
+        }, 0);
       }
     });
   }

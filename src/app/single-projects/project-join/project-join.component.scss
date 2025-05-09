@@ -8,6 +8,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  
 }
 
 .top-shadow {
@@ -19,7 +20,6 @@ section {
 .project-wrapper {
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   max-width: 1920px;
   margin: 0px auto;
   padding: 0px 120px;
