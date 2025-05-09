@@ -1,7 +1,6 @@
 <section id="my_craft" class="fontBricolage">
   <div class="my-craft-wrapper">
-    <div class="my-craft-top-left-wrapper">
-      <!-- <div class="my-craft-headline-content"> -->
+    <div data-aos="fade-right" class="my-craft-top-left-wrapper">
       <div class="headline">
         <p>{{ "myWork.text" | translate }}</p>
         <h1>{{ "myWork.title" | translate }}</h1>
@@ -12,12 +11,11 @@
           {{ "myWork.description" | translate }}
         </p>
       </div>
-      <!-- </div> -->
     </div>
     <div class="my-craft-top-right-wrapper">
-      <!-- <div class="all-project-content"> -->
       <div [routerLink]="'/join'" class="project-image laptop">
         <img
+          data-aos="zoom-in-up"
           class="project-img"
           src="./images/my_craft_laptop.png"
           alt="thumbnail"
@@ -29,7 +27,7 @@
         />
         <button>{{ "myWork.detailBtn" | translate }}</button>
       </div>
-      <div class="project-name">
+      <div data-aos="fade-left" class="project-name">
         <h2>JOIN</h2>
         <div class="project-description">
           <p>
@@ -40,21 +38,20 @@
       <div class="project-link-responsive">
         <a href="#">{{ "myWork.detailBtn" | translate }}</a>
       </div>
-      <!-- </div> -->
     </div>
   </div>
   <div class="my-craft-all-projects-wrapper">
     <div class="all-project-content">
       <div [routerLink]="'/willyTheWizard'" class="project-image">
-        <!--  <img src="./images/el_pollo_loco_ thumbnail.png" alt="thumbnail" />   -->
         <img
+          data-aos="zoom-in-up"
           class="project-img"
           src="./images/my_craft_laptop.png"
           alt="thumbnail"
         />
         <button>{{ "myWork.detailBtn" | translate }}</button>
       </div>
-      <div class="project-name">
+      <div data-aos="fade-right" class="project-name">
         <h2>Willy The Wizard</h2>
         <div class="project-description">
           <p>
@@ -68,15 +65,15 @@
     </div>
     <div class="all-project-content">
       <div [routerLink]="'/daBubble'" class="project-image">
-        <!--  <img src="./images/da_bubble_thumbnail.png" alt="thumbnail" /> -->
         <img
+          data-aos="zoom-in-up"
           class="project-img"
           src="./images/my_craft_laptop.png"
           alt="thumbnail"
         />
         <button>{{ "myWork.detailBtn" | translate }}</button>
       </div>
-      <div class="project-name">
+      <div data-aos="fade-left" class="project-name">
         <h2>DA Bubble</h2>
         <div class="project-description">
           <p>
@@ -90,94 +87,3 @@
     </div>
   </div>
 </section>
-
-<!-- <div class="my-craft-top-wrapper">
-  <div class="my-craft-headline">
-    <div>
-      <p>MY CRAFT</p>
-    </div>
-    <div>
-      <h1>Projects</h1>
-      <img src="./icons/underline_yellow.png" alt="line" />
-    </div>
-    <div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil amet
-        asperiores animi sunt culpa dignissimos odio? Aliquam expedita,
-        suscipit eum libero dolores ut provident sit. Asperiores dolore
-        officia earum aliquam.
-      </p>
-    </div>
-  </div>
-  <div class="my-craft-first-project">
-    <div class="project-image">
-      <img
-        [routerLink]="'/join'"
-        src="./images/my_craft_laptop.png"
-        alt="laptop"
-      />
-      <button>Project details</button>
-    </div>
-
-    <div class="my-craft-featured-sticker">
-      <img src="./icons/featured_project_sticker.png" alt="sticker" />
-    </div>
-    <div class="my-craft-project-name-description">
-      <h2>JOIN</h2>
-      <div class="my-craft-project-description">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ad
-          nam pariatur harum quam facere magnam asperiores autem inventore
-          doloribus nesciunt libero tenetur error aspernatur unde maiores,
-          quia necessitatibus provident!
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="my-craft-all-projects-wrapper">
-  <div class="project-content">
-    <div class="project-image">
-      <img
-        [routerLink]="'/willyTheWizard'"
-        src="./images/el_pollo_loco_ thumbnail.png"
-        alt="willy the wizard"
-      />
-    </div>
-    <div class="image-cover">
-      <div class="project-btn">
-        <button>Project details</button>
-      </div>
-    </div>
-
-    <div class="project-name-description">
-      <h2>WILLY THE WIZARD</h2>
-      <div class="project-description">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ad
-          nam pariatur harum quam facere magnam asperiores autem inventore
-          doloribus nesciunt libero tenetur error aspernatur unde maiores,
-          quia necessitatibus provident!
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="project-content">
-    <img
-      [routerLink]="'/daBubble'"
-      src="./images/da_bubble_thumbnail.png"
-      alt="da bubble"
-    />
-    <div class="project-name-description">
-      <h2>DABubble</h2>
-      <div class="project-description">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ad
-          nam pariatur harum quam facere magnam asperiores autem inventore
-          doloribus nesciunt libero tenetur error aspernatur unde maiores,
-          quia necessitatibus provident!
-        </p>
-      </div>
-    </div>
-  </div>
-</div> -->

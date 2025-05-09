@@ -2,26 +2,26 @@
   <div class="hero-wrapper">
     <div class="top-content">
       <div class="top-left-content">
-        <div class="hero-top-btn">
+        <div data-aos="fade-right" class="hero-top-btn">
           <img src="./icons/waving_hand.png" alt="icon" />
-          <button class="fontBricolage">
+          <button  class="fontBricolage">
             <p>{{ "hello.title" | translate }}</p>
             <span class="hidden">{{ "hello.name" | translate }}</span>
           </button>
         </div>
-        <div class="hero-text">
+        <div data-aos="fade-right"  class="hero-text">
           <span class="uppercase">F</span>
           <span class="lowercase">r</span>
           <span class="lowercase">o</span>
           <span class="lowercase">n</span>
-          <span class="lowercase">t</span>
+          <span class="lowercase">t</span> 
           <span class="lowercase">e</span>
           <span class="lowercase">n</span>
           <span class="lowercase">d</span>
         </div>
       </div>
       <div class="top-right-content">
-        <div class="hero-profile">
+        <div data-aos="fade-left"  class="hero-profile">
           <img class="polaroid" src="./images/empty_frame.png" alt="polaroid" />
           <img class="portrait" src="./images/profile.jpg" alt="portrait" />
           <div class="profile-name fontKalam">
@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="lower-content">
-      <div class="hero-text">
+      <div data-aos="fade-left" class="hero-text">
         <span class="uppercase">{{ "profession.oneLetter" | translate }}</span>
         <span class="uppercase">{{ "profession.twoLetter" | translate }}</span>
         <span class="uppercase">{{ "profession.threeLetter" | translate }}</span>
@@ -45,14 +45,14 @@
         <span class="uppercase">{{ "profession.nineLetter" | translate }}</span>
         <span class="uppercase">{{ "profession.tenLetter" | translate }}</span>
       </div>
-      <div class="hero-lower-btn">
+      <div data-aos="fade-left" class="hero-lower-btn">
         <button [routerLink]="['/']" fragment="contact" class="fontBricolage">
           {{ "getInTouch.title" | translate }}
         </button>
       </div>
     </div>
   </div>
-  <div class="hero-social-media-wrapper">
+  <div data-aos="fade-right" class="hero-social-media-wrapper">
     <img src="./icons/git_hub.png" alt="icon" />
     <img src="./icons/linked_in.png" alt="icon" />
     <img src="./icons/mail.png" alt="icon" />

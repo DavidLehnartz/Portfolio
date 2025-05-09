@@ -1,5 +1,5 @@
 <section>
-  <div class="header-wrapper">
+  <div data-aos="fade-down"  class="header-wrapper">
     <div class="navbar-logo">
       <img src="./logo/fox_logo.png" alt="logo" />
     </div>
@@ -21,7 +21,7 @@
         <img src="./icons/contact_hover.png" alt="icon" />
       </a>
     </div>
-    <div class="navbar-language-changer">
+    <div class="navbar-language-changer"> 
       <button
         (click)="switchLanguage('en')"
         [class.active-language]="isEnglishActive"
@@ -50,8 +50,11 @@
       />
     </div>
   </div>
-  @if (this.isBurgerMenuOpen) {
-  <div class="burger-menu-content fontBricolage">
+  <!-- <div></div> -->
+  <div
+    [class.show]="isBurgerMenuOpen"
+    class="burger-menu-content fontBricolage"
+  >
     <div class="burger-header">
       <img src="./logo/fox_logo.png" alt="logo" />
       <img
@@ -101,5 +104,4 @@
       <img src="./icons/mail.png" alt="icon" />
     </div>
   </div>
-  }
 </section>

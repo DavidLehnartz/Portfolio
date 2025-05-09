@@ -1,16 +1,16 @@
 <section class="fontBricolage">
   <div class="top-shadow"></div>
   <app-projects-header></app-projects-header>
-  <div class="go-back">
+  <div data-aos="fade-right" class="go-back">
     <div>
       <img src="./icons/back_arrow_orange.png" alt="arrow" />
     </div>
-    <div [routerLink]="['/']" fragment="my_craft" class="go-back-text">
+    <div  [routerLink]="['/']" fragment="my_craft" class="go-back-text">
       {{ "projectJoin.goBack" | translate }}
     </div>
   </div>
   <div class="project-wrapper">
-    <div class="project-left-content">
+    <div data-aos="fade-right" class="project-left-content">
       <div class="name">
         <h1>Join</h1>
         <img src="./icons/blue_stripe.png" alt="stripe" />
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="project-right-content">
+    <div data-aos="fade-left" class="project-right-content">
       <div class="project-img">
         <img src="./images/join_thumbnail.png" alt="join" />
       </div>

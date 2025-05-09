@@ -1,18 +1,26 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MainContentComponent } from './main-content/main-content.component';
-import { SingleProjectsComponent } from './single-projects/single-projects.component';
+import { OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
   imports: [
     RouterOutlet,
 
-    /* MainContentComponent, */
+    
   ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  styleUrls:  ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'portfolio';
+
+  ngOnInit() {
+    AOS.init({
+      duration: 800, // Animationsdauer in ms
+      easing: 'ease-out', // Übergangsart
+      once: false, // Nur einmal beim ersten Scroll
+    });
+  }
 }

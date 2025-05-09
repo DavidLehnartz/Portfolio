@@ -166,10 +166,11 @@ textarea.error::placeholder {
 }
 
 .privacy-error {
+  display: flex;
   color: red;
   font-size: 16px;
   font-weight: 400;
-  margin: 16px;
+  margin-top: 16px;
 }
 
 .overlay {
@@ -212,6 +213,18 @@ textarea.error::placeholder {
     > img {
       width: 130px;
       height: 24px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .privacy-error {
+    justify-content: center;
+  }
+
+  .button-content{
+    >img{
+      width: 115px;
     }
   }
 }
