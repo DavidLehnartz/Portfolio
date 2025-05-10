@@ -71,7 +71,10 @@
         "privacyTextBottom": "gelesen und stimme der Verarbeitung meiner Daten gemäß den dort beschriebenen Bedingungen zu.",
         "submitBtn": "Senden",
         "legalNotice": "Impressum",
-        "stickerText": " • David Lehnartz • Frontend-Entwickler • David Lehnartz • Frontend-Entwickler"
+        "stickerText": " • David Lehnartz • Frontend-Entwickler • David Lehnartz • Frontend-Entwickler",
+        "messageMinLength": "Die Nachricht muss mindestens 4 Zeichen enthalten.",
+        "nameMinLength": "Die Nachricht muss mindestens 4 Zeichen enthalten.",
+        "emailInvalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein."
     },
     "testimonial": {
         "title": "Meinungen der Kollegen",

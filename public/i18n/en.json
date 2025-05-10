@@ -71,7 +71,10 @@
         "privacyTextBottom": "and agree to the processing of my data as outlined.",
         "submitBtn": "Send",
         "legalNotice": "Legal Notice",
-        "stickerText": " • David Lehnartz • Frontend-Developer • David Lehnartz • Frontend-Developer"
+        "stickerText": " • David Lehnartz • Frontend-Developer • David Lehnartz • Frontend-Developer",
+        "messageMinLength": "Message must be at least 4 characters.",
+        "nameMinLength": "Message must be at least 4 characters.",
+        "emailInvalid": "Please enter a valid email address."
     },
     "testimonial": {
         "title": "Colleagues` Thoughts",

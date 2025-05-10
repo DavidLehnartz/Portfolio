@@ -4,34 +4,11 @@ p {
   color: #f8f9fa;
 }
 
-section {
-}
-
-.contact-form-wrapper {
-  /*  > form {
-    display: flex;
-    flex-direction: column;
-
-    > label {
-      font-size: 24px;
-      font-weight: 500;
-      color: #f8f9fa;
-    }
-
-    > input {
-      font-size: 18px;
-      font-weight: 400;
-      border: none;
-      background-color: transparent;
-      padding: 8px 16px;
-    }
-  } */
-}
-
 .form-content {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  margin-bottom: 16px;
 
   > form {
     display: flex;
@@ -173,8 +150,14 @@ textarea.error::placeholder {
   margin-top: 16px;
 }
 
+.error-text {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -218,12 +201,8 @@ textarea.error::placeholder {
 }
 
 @media (max-width: 350px) {
-  .privacy-error {
-    justify-content: center;
-  }
-
-  .button-content{
-    >img{
+  .button-content {
+    > img {
       width: 115px;
     }
   }

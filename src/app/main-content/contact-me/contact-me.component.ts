@@ -9,4 +9,5 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './contact-me.component.html',
   styleUrl: './contact-me.component.scss',
 })
-export class ContactMeComponent {}
+export class ContactMeComponent {
+}

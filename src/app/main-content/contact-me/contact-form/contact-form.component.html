@@ -12,9 +12,19 @@
           [class.error]="showMessageError"
           required
           autocomplete="off"
+          minlength="4"
+          #nameInput="ngModel"
         />
-        <div class="underline"></div>
+        <div class="underline">
+          @if (nameInput.invalid && nameInput.touched &&
+          nameInput.errors?.['minlength']) {
+          <span class="error-text">{{
+            "contactForm.nameMinLength" | translate
+          }}</span>
+          }
+        </div>
       </div>
+
       <div class="form-content">
         <label for="email">{{ "contactForm.email" | translate }}</label>
         <input
@@ -27,8 +37,17 @@
           required
           pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
           autocomplete="off"
+          minlength="4"
+          #emailInput="ngModel"
         />
-        <div class="underline"></div>
+        <div class="underline">
+          @if (emailInput.invalid && emailInput.touched &&
+          emailInput.errors?.['pattern']) {
+          <span class="error-text">{{
+            "contactForm.emailInvalid" | translate
+          }}</span>
+          }
+        </div>
       </div>
       <div class="form-content">
         <label for="message">{{ "contactForm.message" | translate }}</label>
@@ -41,8 +60,17 @@
           [class.error]="showMessageError"
           required
           rows="1"
+          minlength="4"
+          #messageInput="ngModel"
         ></textarea>
-        <div class="underline"></div>
+        <div class="underline">
+          @if (messageInput.invalid && messageInput.touched &&
+          messageInput.errors?.['minlength']) {
+          <span class="error-text">{{
+            "contactForm.messageMinLength" | translate
+          }}</span>
+          }
+        </div>
       </div>
 
       <label
@@ -75,11 +103,12 @@
       </div>
     </form>
   </div>
-  @if (this.showSuccessOverlay) {
-  <div class="overlay">
-    <div class="overlay-content">
-      <p>TESTETSTESTETSTEST</p>
-    </div>
-  </div>
-  }
 </section>
+
+@if (this.showSuccessOverlay) {
+<div class="overlay">
+  <div class="overlay-content">
+    <p>TESTETSTESTETSTEST</p>
+  </div>
+</div>
+}
