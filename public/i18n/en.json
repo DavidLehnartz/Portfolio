@@ -73,7 +73,7 @@
         "legalNotice": "Legal Notice",
         "stickerText": " • David Lehnartz • Frontend-Developer • David Lehnartz • Frontend-Developer",
         "messageMinLength": "Message must be at least 4 characters.",
-        "nameMinLength": "Message must be at least 4 characters.",
+        "nameMinLength": "Name must be at least 4 characters.",
         "emailInvalid": "Please enter a valid email address."
     },
     "testimonial": {

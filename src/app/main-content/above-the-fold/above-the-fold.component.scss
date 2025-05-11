@@ -194,7 +194,7 @@ section {
 .hero-lower-btn {
   @include dFlex($jContent: flex-end);
   margin-top: 24px;
-  z-index: 999;
+  z-index: 99;
 
   > button {
     @include btnStyle();
