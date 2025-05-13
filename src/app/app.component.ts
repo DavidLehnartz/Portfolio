@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { OnInit } from '@angular/core';
 import * as AOS from 'aos';
 
+
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],

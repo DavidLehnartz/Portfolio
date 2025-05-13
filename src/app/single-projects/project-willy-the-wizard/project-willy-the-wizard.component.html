@@ -55,15 +55,29 @@
         <img src="./icons/featured_project_sticker.png" alt="sticker" />
       </div>
       <div class="buttons">
-        <div class="button">GitHub</div>
-        <div class="button">Live Test</div>
+        <!-- <div class="button">GitHub</div> -->
+        <a
+          class="button"
+          href="https://github.com/DavidLehnartz"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <!--  <div class="button">Live Test</div> -->
+        <a
+          class="button"
+          href="https://david-lehnartz.developerakademie.net/2d_game_willy_the_wizard/index.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Live Test</a
+        >
       </div>
       <div class="project-navigation">
         <div class="go-back-project-responsive">
           <div class="next-project-img">
             <img src="./icons/back_arrow_orange.png" alt="arrow" />
           </div>
-          <div class="go-back-text">
+          <div [routerLink]="['/']" fragment="my_craft" class="go-back-text">
             {{ "projectWilly.goBack" | translate }}
           </div>
         </div>

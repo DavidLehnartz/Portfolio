@@ -1,8 +1,13 @@
 <section id="contact" class="fontBricolage">
-  <div  class="footer-wrapper">
+  <div class="footer-wrapper">
     <div class="footer-logo-text">
       <div class="footer-logo">
-        <img src="./logo/fox_logo.png" alt="logo" />
+        <img
+          [routerLink]="['/']"
+          fragment="atf"
+          src="./logo/fox_logo.png"
+          alt="logo"
+        />
       </div>
       <div class="footer-text">
         <p>© David Lehnartz</p>
@@ -11,16 +16,30 @@
     </div>
     <div class="footer-nav-links">
       <div class="legal-link">
-        <a href="#">{{ "contactForm.legalNotice" | translate }}</a>
+        <a [routerLink]="['/legalNotice']">{{
+          "contactForm.legalNotice" | translate
+        }}</a>
         <img src="./icons/contact_hover.png" alt="icon" />
       </div>
       <div class="links">
         <img src="./icons/git_hub.png" alt="" />
-        <a href="#">GitHub</a>
+        <!-- <a href="#">GitHub</a> -->
+        <a
+          href="https://github.com/DavidLehnartz"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
       </div>
       <div class="links">
         <img src="./icons/linked_in.png" alt="" />
-        <a href="#">LinkedIn</a>
+        <!-- <a href="#">LinkedIn</a> -->
+        <a
+          href="https://www.linkedin.com/in/david-lehnartz-3307602b4/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
       </div>
       <div class="links">
         <img src="./icons/mail.png" alt="" />

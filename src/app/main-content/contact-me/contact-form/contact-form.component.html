@@ -88,7 +88,7 @@
         <img class="checkbox-img" [src]="getCheckboxImage()" alt="checkbox" />
         <div class="privacy-text">
           {{ "contactForm.privacyTextTop" | translate }}
-          <a href="#">{{ "contactForm.privacyTextLink" | translate }}</a>
+          <a [routerLink]="['/privacyPolicy']">{{ "contactForm.privacyTextLink" | translate }}</a>
           {{ "contactForm.privacyTextBottom" | translate }}
         </div>
       </label>
