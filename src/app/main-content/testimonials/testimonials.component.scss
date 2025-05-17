@@ -28,6 +28,12 @@ section {
   }
 }
 
+.reveal-loop {
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
+}
+
 .testimonials-header-bottom {
   display: flex;
   align-items: center;
@@ -65,6 +71,16 @@ section {
   border-radius: 32px;
 
   &:hover .inner-content-bottom {
+    h3 {
+      color: aliceblue;
+    }
+
+    p {
+      color: aliceblue;
+    }
+  }
+
+  &:hover .inner-content-top {
     h3 {
       color: aliceblue;
     }
@@ -130,6 +146,16 @@ section {
     }
   }
 
+  &:hover .inner-content-top {
+    h3 {
+      color: aliceblue;
+    }
+
+    p {
+      color: aliceblue;
+    }
+  }
+
   /* position: relative;
   z-index: 1; */
 
@@ -177,8 +203,18 @@ section {
   &:hover {
     z-index: 6;
   }
- 
+
   &:hover .inner-content-bottom {
+    h3 {
+      color: aliceblue;
+    }
+
+    p {
+      color: aliceblue;
+    }
+  }
+
+  &:hover .inner-content-top {
     h3 {
       color: aliceblue;
     }

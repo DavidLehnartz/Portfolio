@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
-  imports: [CommonModule, FormsModule, RouterLink , TranslatePipe],
+  imports: [CommonModule, FormsModule, RouterLink, TranslatePipe],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
@@ -21,6 +21,8 @@ export class ContactFormComponent {
   privacyPlaceholder: string = '';
   showMessageError = false;
   showSuccessOverlay = false;
+
+  @Output() emailSent = new EventEmitter<void>();
 
   contactData = {
     name: '',

@@ -8,7 +8,6 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
-  
 }
 
 .top-shadow {
@@ -72,6 +71,10 @@ section {
     width: 121px;
     height: 20px;
   }
+}
+
+.reveal-loop {
+  animation: revealCycle 3s ease-in-out infinite;
 }
 
 .description {

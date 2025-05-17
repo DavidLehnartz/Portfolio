@@ -46,8 +46,15 @@ section {
 
     &:hover img {
       display: block;
+      animation: revealCycle 2s ease-in-out infinite;
     }
   }
+}
+
+.reveal-loop{
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
 }
 
 .blackText {
@@ -79,6 +86,7 @@ section {
 
     &:hover > img {
       display: block;
+      animation: revealCycle 2s ease-in-out infinite;
     }
 
     &.active-language {

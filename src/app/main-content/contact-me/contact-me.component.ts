@@ -10,4 +10,5 @@ import { TranslatePipe } from '@ngx-translate/core';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
+    
 }

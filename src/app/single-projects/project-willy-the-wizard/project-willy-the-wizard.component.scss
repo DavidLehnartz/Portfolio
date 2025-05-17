@@ -74,6 +74,10 @@ section {
   }
 }
 
+.reveal-loop {
+  animation: revealCycle 3s ease-in-out infinite;
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -165,8 +169,7 @@ section {
 
   > img {
     width: 100%;
-   /*  height: 574px; */
-   /*  object-fit: cover; */
+    height: 384px;
     border-radius: 30px;
   }
 }
@@ -278,6 +281,10 @@ section {
 
   .project-img {
     justify-content: center;
+
+    > img {
+      height: auto;
+    }
   }
 
   .name {

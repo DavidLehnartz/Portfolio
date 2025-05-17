@@ -63,6 +63,7 @@
 
   &:hover img {
     display: block;
+    animation: revealCycle 2s ease-in-out infinite;
   }
 
   > a {

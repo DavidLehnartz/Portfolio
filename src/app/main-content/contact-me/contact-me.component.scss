@@ -45,6 +45,12 @@ section {
   }
 }
 
+.reveal-loop{
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
+}
+
 .description {
   > p {
     font-size: 18px;

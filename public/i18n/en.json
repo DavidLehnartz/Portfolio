@@ -52,7 +52,7 @@
         "text": "MY CRAFT",
         "description": "Here you will find a curated selection of my projects – each one a result of my passion for web development, creativity, and problem-solving. These projects represent my journey of learning, growing, and turning ideas into real, impactful applications.",
         "projectDescription1": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. ",
-        "projectDescription2": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets. Challenging gameplay, atmospheric pixel art, and a melancholic story define Willy’s journey into the unknown.",
+        "projectDescription2": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets.",
         "projectDescription3": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization. ",
         "detailBtn": "Project details"
     },
@@ -62,6 +62,7 @@
         "description": "I'm open to new challenges, exciting projects, and creative collaborations. I'm especially passionate about modern web technologies, clean code structures, and user-friendly applications. If you're planning a project, looking for someone to exchange ideas with, or just want to say hi – feel free to get in touch. Who knows, maybe something great will come out of it!",
         "name": "What´s your name?",
         "namePlaceholder": "Your name goes here",
+        "namePlaceholderError": "You forgot to fill in your name!",
         "email": "What´s your email?",
         "emailPlaceholder": "youremail@email.com",
         "message": "How can i help you?",
@@ -89,7 +90,7 @@
         "description": "Description",
         "descriptionText": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
         "details": "Implementation Details",
-        "detailsText": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+        "detailsText": "In this team project, I was responsible for developing the board. My tasks included implementing drag & drop functionality, as well as enabling the editing and deletion of subtasks.",
         "duration": "Duration:",
         "durationText": "5 Weeks",
         "nextProject": "Next Project"
@@ -97,9 +98,9 @@
     "projectWilly": {
         "goBack": "Go Back",
         "description": "Description",
-        "descriptionText": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets. Challenging gameplay, atmospheric pixel art, and a melancholic story define Willy’s journey into the unknown.",
+        "descriptionText": "Willy the Wizard is a dark 2D action-adventure that draws players into a forgotten, perilous world. As the young wizard Willy, you must master ancient magic, defeat sinister creatures, and uncover your fate in a crumbling land full of secrets.",
         "details": "Implementation Details",
-        "detailsText": "TEST",
+        "detailsText": "The game was built with JavaScript using object-oriented programming. Classes handle characters, enemies, and spells, with animations and collisions managed modularly.",
         "duration": "Duration:",
         "durationText": "5 Weeks",
         "nextProject": "Next Project"

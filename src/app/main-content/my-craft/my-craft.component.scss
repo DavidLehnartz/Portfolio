@@ -54,6 +54,12 @@ section {
   }
 }
 
+.reveal-loop{
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
+}
+
 .my-craft-top-right-wrapper {
   display: flex;
   flex-direction: column;
@@ -93,7 +99,7 @@ section {
   > img {
     display: block;
     max-width: 100%;
-    height: auto;
+    
   }
 
   &:hover {

@@ -52,7 +52,7 @@
         "text": "MEINE ARBEIT",
         "description": "Hier findest du eine sorgfältig ausgewählte Auswahl meiner Projekte – jedes davon ein Ergebnis meiner Leidenschaft für Webentwicklung, Kreativität und Problemlösung. Diese Projekte spiegeln meinen Weg des Lernens, Wachsens und der Umsetzung von Ideen in reale, wirkungsvolle Anwendungen wider.",
         "projectDescription1": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen, weise Benutzern und Kategorien zu.",
-        "projectDescription2": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das Spieler in eine vergessene, gefährliche Welt entführt. Als junger Zauberer Willy musst du alte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einer zerfallenen Welt voller Geheimnisse finden. Ein forderndes Gameplay, atmosphärische Pixelgrafik und eine melancholische Geschichte prägen Willys Reise ins Unbekannte.",
+        "projectDescription2": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das die Spieler in eine vergessene und gefährliche Welt entführt. In der Rolle des jungen Zauberers Willy musst du uralte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einem zerfallenden Land voller Geheimnisse enthüllen.",
         "projectDescription3": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und -zusammenarbeit mit ihrer intuitiven Benutzeroberfläche, Echtzeit-Nachrichten und einer robusten Kanalorganisation.",
         "detailBtn": "Projekt details"
     },
@@ -62,6 +62,7 @@
         "description": "Ich bin offen für neue Herausforderungen, spannende Projekte und kreative Zusammenarbeit. Besonders begeistern mich moderne Webtechnologien, saubere Code-Strukturen und nutzerfreundliche Anwendungen. Wenn du ein Projekt planst, jemanden zum Austauschen suchst oder einfach nur Hallo sagen möchtest, freue ich mich über deine Nachricht. Vielleicht entsteht daraus ja etwas Großartiges!",
         "name": "Wie lautet dein Name?",
         "namePlaceholder": "Dein Name",
+        "namePlaceholderError": "Bitte tragen Sie Ihren Namen ein",
         "email": "Wie lautet deine E-Mail?",
         "emailPlaceholder": "email@email.com",
         "message": "Wie kann ich dir helfen?",
@@ -89,7 +90,7 @@
         "description": "Beschreibung",
         "descriptionText": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mit Drag-and-Drop-Funktionen und weise Benutzer sowie Kategorien zu.",
         "details": "Details zur Umsetzung",
-        "detailsText": "TEST",
+        "detailsText": "In diesem Teamprojekt war ich für die Umsetzung des Boards verantwortlich. Dazu gehörten die Implementierung der Drag & Drop Funktionalität, sowie die Bearbeitung und das Löschen von Subtasks.",
         "duration": "Zeitraum:",
         "durationText": "5 Wochen",
         "nextProject": "Nächstes Project"
@@ -97,9 +98,9 @@
     "projectWilly": {
         "goBack": "Zurück",
         "description": "Beschreibung",
-        "descriptionText": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das die Spieler in eine vergessene, gefährliche Welt entführt. Als der junge Zauberer Willy musst du uralte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einem zerfallenden Land voller Geheimnisse entdecken. Herausforderndes Gameplay, stimmungsvolle Pixelgrafik und eine melancholische Geschichte prägen Willys Reise ins Unbekannte.",
+        "descriptionText": "Willy the Wizard ist ein düsteres 2D-Action-Adventure, das die Spieler in eine vergessene und gefährliche Welt entführt. In der Rolle des jungen Zauberers Willy musst du uralte Magie meistern, finstere Kreaturen besiegen und dein Schicksal in einem zerfallenden Land voller Geheimnisse enthüllen.",
         "details": "Details zur Umsetzung",
-        "detailsText": "TEST",
+        "detailsText": "Das Spiel wurde mit JavaScript und objektorientierter Programmierung umgesetzt. Klassen steuern Spielfiguren, Gegner und Zauber, während Animationen und Kollisionen modular verwaltet werden.",
         "duration": "Zeitraum:",
         "durationText": "5 Wochen",
         "nextProject": "Nächstes Project"

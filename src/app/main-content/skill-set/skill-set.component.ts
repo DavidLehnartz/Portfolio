@@ -15,15 +15,22 @@ export class SkillSetComponent {
   currentImage: string = this.firstImage;
   isImageAActive: boolean = true;
   timeout: number = 50;
+  timeoutImg: number = 200;
 
   changeImage() {
     this.currentImage = this.transImage;
 
     setTimeout(() => {
       if (this.isImageAActive) {
-        this.currentImage = this.lastImage;
+        setTimeout(() => {
+          this.currentImage = this.lastImage;
+        }, this.timeout);
+        
       } else {
-        this.currentImage = this.firstImage;
+        setTimeout(() => {
+          this.currentImage = this.firstImage;
+        }, this.timeout);
+        
       }
       this.isImageAActive = !this.isImageAActive;
     }, this.timeout);

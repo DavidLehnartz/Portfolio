@@ -1,11 +1,12 @@
-
 body {
   margin: 0px auto;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-html{
+html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 h1,
@@ -20,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -92,17 +93,40 @@ a {
 @keyframes shrinkButton {
   from {
     transform: scaleX(1.2);
-   
   }
   to {
     transform: scaleX(1);
-    
   }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to   { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes revealCycle {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+  25% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+  }
+  75% {
+    clip-path: inset(0 0% 0 0);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
 }
 
 /* bricolage-grotesque-200 - latin */

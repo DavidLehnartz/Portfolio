@@ -1,6 +1,5 @@
 @use "./../../mixins.scss" as *;
 
-
 section {
   @include dFlex();
   height: 100vh;
@@ -22,7 +21,7 @@ p {
   display: flex;
   gap: 32px;
   padding: 144px 120px;
-  max-width: 1920px;
+  max-width: 1440px;
 }
 
 .about-me-content-left {
@@ -132,6 +131,12 @@ p {
       font-weight: 400;
     }
   }
+}
+
+.reveal-loop{
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
 }
 
 .about-me-content-btn {

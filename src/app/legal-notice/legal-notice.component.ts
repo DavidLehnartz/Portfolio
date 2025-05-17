@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from "../shared/components/header/header.component";
-import { FooterComponent } from "../main-content/contact-me/footer/footer.component";
+import { HeaderComponent } from '../shared/components/header/header.component';
 
 @Component({
   selector: 'app-legal-notice',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent],
   templateUrl: './legal-notice.component.html',
-  styleUrl: './legal-notice.component.scss'
+  styleUrl: './legal-notice.component.scss',
 })
-export class LegalNoticeComponent {
-
-}
+export class LegalNoticeComponent {}

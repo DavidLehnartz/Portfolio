@@ -17,6 +17,12 @@ h1 {
   /* margin-bottom: 32px; */
 }
 
+.reveal-loop {
+  height: auto;
+  animation: revealCycle 3s ease-in-out infinite;
+  object-fit: cover;
+}
+
 .skill-set-top-wrapper {
   display: flex;
   gap: 42px;
@@ -176,8 +182,8 @@ h1 {
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 50px;
-    left: 75px;
+    top: 70px;
+    left: 50px;
     font-size: 40px;
     font-weight: 400;
     color: #f8f9fa;
@@ -199,6 +205,19 @@ h1 {
   position: absolute;
   top: -55px;
   right: -175px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.peeled-sticker-content-responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  position: absolute;
+  top: -35px;
+  right: -165px;
   font-size: 20px;
   font-weight: 400;
 }
@@ -331,8 +350,8 @@ h1 {
 
   .skill-set-sticker-responsive {
     > div {
-      top: 25px;
-      left: 40px;
+      top: 55px;
+      left: 20px;
     }
 
     > img {
@@ -345,5 +364,10 @@ h1 {
     > span {
       font-size: 14px;
     }
+  }
+
+  .peeled-sticker-content-responsive {
+    top: -45px;
+    right: -170px;
   }
 }
