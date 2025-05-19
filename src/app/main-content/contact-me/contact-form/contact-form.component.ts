@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
+import { OverlayService } from './../../../services/overlay.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,6 +12,8 @@ import { RouterLink } from '@angular/router';
   styleUrl: './contact-form.component.scss',
 })
 export class ContactFormComponent {
+  constructor(private overlayService: OverlayService) {}
+
   isChecked: boolean = false;
   isHovered: boolean = false;
   isSubmitted: boolean = false;
@@ -21,8 +24,6 @@ export class ContactFormComponent {
   privacyPlaceholder: string = '';
   showMessageError = false;
   showSuccessOverlay = false;
-
-  @Output() emailSent = new EventEmitter<void>();
 
   contactData = {
     name: '',
@@ -53,7 +54,8 @@ export class ContactFormComponent {
     if (ngForm.valid && ngForm.submitted && this.contactData.privacy) {
       console.log(this.contactData);
 
-      this.showSuccessOverlay = true;
+      /* this.showSuccessOverlay = true; */
+      this.overlayService.show();
 
       setTimeout(() => {
         this.showSuccessOverlay = false;

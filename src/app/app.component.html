@@ -1,2 +1,9 @@
 <router-outlet />
 
+<ng-container *ngIf="overlayService.visible$ | async">
+  <div class="overlay" [class.fade-out]="fadingOut">
+    <div class="overlay-content fontBricolage">
+      <p>{{ "contactForm.successfulMessage" | translate }}</p>
+    </div>
+  </div>
+</ng-container>
