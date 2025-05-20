@@ -5,6 +5,7 @@ import { ProjectWillyTheWizardComponent } from './single-projects/project-willy-
 import { ProjectDaBubbleComponent } from './single-projects/project-da-bubble/da-bubble.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 export const routes: Routes = [
   {
@@ -30,5 +31,9 @@ export const routes: Routes = [
   {
     path: 'privacyPolicy',
     component: PrivacyPolicyComponent,
+  },
+  {
+    path: 'comingSoon',
+    component: ComingSoonComponent,
   },
 ];

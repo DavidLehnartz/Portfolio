@@ -115,5 +115,8 @@
         "duration": "Duration:",
         "durationText": "5 Weeks",
         "nextProject": "Next Project"
+    },
+    "comingSoon": {
+        "title": "DA Bubble coming soon!"
     }
 }
