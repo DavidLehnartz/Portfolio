@@ -162,7 +162,7 @@ section {
   transform: rotate(8deg);
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-   transition: filter 0.3s ease;
+  transition: filter 0.3s ease;
 }
 
 .profile-name {
@@ -219,6 +219,9 @@ section {
 }
 
 .hero-social-media-wrapper {
+  /*  position: absolute;
+  bottom: 90px;
+  left: 72px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -228,15 +231,20 @@ section {
   box-sizing: border-box;
   /* margin-top: 32px; */
 
-  > img {
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    border: 1px solid #f8f9fa;
-    border-radius: 100px;
-    padding: 4px;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 2px 1px #f8f9fa;
+  > a {
+    display: flex;
+    max-width: 50px;
+
+    > img {
+      cursor: pointer;
+      width: 32px;
+      height: 32px;
+      /* border: 1px solid #f8f9fa; */
+      border-radius: 100px;
+      padding: 6px;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 2px 1px #f8f9fa;
+    }
   }
 
   img:nth-child(1) {
