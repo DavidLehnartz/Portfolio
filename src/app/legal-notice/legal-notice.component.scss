@@ -1,10 +1,11 @@
 section {
   width: 100%;
   height: 100vh;
-  background-image: url("./../../../public/images/atf_bg.png");
+ /*  background-image: url("./../../../public/images/atf_bg.png"); */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
+  background-color: rgb(0, 0, 0);
 }
 
 .legal-notice-wrapper {
@@ -12,7 +13,9 @@ section {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 144px 120px;
+  padding-top: 144px;
+  padding-left: 120px;
+  padding-right: 120px;
   max-width: 1440px;
   margin: 0 auto;
 }

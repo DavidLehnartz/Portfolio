@@ -121,5 +121,13 @@
     },
     "comingSoon": {
         "title": "DA Bubble kommt bald!"
+    },
+    "legalNotice": {
+        "title": "Impressum",
+        "text": "<h1>IMPRESSUM</h1>\n<p>Angaben gemäß § 5 DDG</p>\n<p>David Lehnartz<br />\n<br />\nPhilipp-Melanchthon-str.1<br />\n42855 Remscheid <br /></p>\n<p><strong>Vertreten durch: </strong><br />\nDavid Lehnartz<br /></p>\n<p><strong>Kontakt:</strong> <br />\nTelefon: %2B49-15732295327<br />\nE-Mail:\n<a href=\"mailto:malermeister-lehnartz@gmx.de\">malermeister-lehnartz&#64;gmx.de</a></p>\n<br />\n<p>Impressum von</p>\n<a href=\"https://impressum-generator.de\" rel=\"dofollow\">Impressum-Generator.de</a>.\n<p>Powered by</p>\n<a href=\"https://www.kanzlei-hasselbach.de/\" rel=\"nofollow\">Franziska Hasselbach, Bonn</a>."
+    },
+    "privacyPolicy": {
+        "title": "Datenschutzerklärung",
+        "text": ""
     }
 }

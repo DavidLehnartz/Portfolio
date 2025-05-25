@@ -1,10 +1,11 @@
 section {
   width: 100%;
   height: auto;
-  background-image: url("./../../../public/images/atf_bg.png");
+  /* background-image: url("./../../../public/images/atf_bg.png"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: black; 
 }
 
 .privacy-policy-wrapper {

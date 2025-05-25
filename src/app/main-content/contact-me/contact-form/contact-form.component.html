@@ -94,7 +94,7 @@
           {{ "contactForm.privacyTextBottom" | translate }}
         </div>
       </label>
-      @if(!this.contactData.privacy){
+      @if(!this.contactData.privacy && isAttemptedSubmit){
       <div class="privacy-error">{{ privacyPlaceholder }}</div>
       }
       <div class="button-content">

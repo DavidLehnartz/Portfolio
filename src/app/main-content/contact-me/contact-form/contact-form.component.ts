@@ -18,6 +18,7 @@ export class ContactFormComponent {
   isChecked: boolean = false;
   isHovered: boolean = false;
   isSubmitted: boolean = false;
+  isAttemptedSubmit = false;
 
   namePlaceholder: string = 'Your name goes here';
   emailPlaceholder: string = 'youremail@email.com';
@@ -49,6 +50,8 @@ export class ContactFormComponent {
 
   onSubmit(ngForm: NgForm) {
     this.showMessageError = false;
+    this.isAttemptedSubmit = true;
+
     if (ngForm.submitted && ngForm.form.valid && this.contactData.privacy) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
@@ -60,6 +63,8 @@ export class ContactFormComponent {
 
             this.overlayService.show();
             ngForm.resetForm();
+            this.resetPlaceholders();
+            this.isAttemptedSubmit = false;
           },
           error: (error) => {
             console.error(error);
@@ -88,6 +93,13 @@ export class ContactFormComponent {
       (this.messagePlaceholder = 'What do you need to develop?'),
       (this.privacyPlaceholder = 'Please accept the privacy policy!')
     );
+  }
+
+  resetPlaceholders() {
+    this.namePlaceholder = 'Your name goes here';
+    this.emailPlaceholder = 'youremail@email.com';
+    this.messagePlaceholder = 'your message';
+    this.privacyPlaceholder = '';
   }
 
   getCheckboxImage(): string {
