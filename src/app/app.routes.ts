@@ -6,6 +6,7 @@ import { ProjectDaBubbleComponent } from './single-projects/project-da-bubble/da
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
   {
@@ -35,5 +36,9 @@ export const routes: Routes = [
   {
     path: 'comingSoon',
     component: ComingSoonComponent,
+  },
+  {
+    path: '**',
+    component: NotFoundComponent,
   },
 ];

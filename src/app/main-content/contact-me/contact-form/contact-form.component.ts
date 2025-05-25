@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import { RouterLink } from '@angular/router';
 import { OverlayService } from './../../../services/overlay.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-form',
@@ -32,8 +33,61 @@ export class ContactFormComponent {
     privacy: false,
   };
 
-  getContactData() {
-    return this.contactData;
+  http = inject(HttpClient);
+  mailTest = true;
+
+  post = {
+    endPoint: 'https://devwithdavid.com/sendMail.php',
+    body: (payload: any) => JSON.stringify(payload),
+    options: {
+      headers: {
+        'Content-Type': 'text/plain',
+        responseType: 'text',
+      },
+    },
+  };
+
+  onSubmit(ngForm: NgForm) {
+    this.showMessageError = false;
+    if (ngForm.submitted && ngForm.form.valid && this.contactData.privacy) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            /* console.log('email verschickt');
+            console.log(this.contactData);
+            console.log(response); */
+
+            this.overlayService.show();
+            ngForm.resetForm();
+          },
+          error: (error) => {
+            console.error(error);
+          },
+          complete: () => console.info('send post complete'),
+        });
+    } else if (this.isEmptyInput()) {
+      this.showInputError();
+    }
+  }
+
+  isEmptyInput() {
+    return (
+      this.contactData.name === '' ||
+      this.contactData.email === '' ||
+      this.contactData.message === '' ||
+      this.contactData.privacy === false
+    );
+  }
+
+  showInputError() {
+    return (
+      (this.showMessageError = true),
+      (this.namePlaceholder = 'You forgot to fill in your name!'),
+      (this.emailPlaceholder = 'Your email is required!'),
+      (this.messagePlaceholder = 'What do you need to develop?'),
+      (this.privacyPlaceholder = 'Please accept the privacy policy!')
+    );
   }
 
   getCheckboxImage(): string {
@@ -48,13 +102,13 @@ export class ContactFormComponent {
     }
   }
 
-  onSubmit(ngForm: NgForm) {
+  /* onSubmit(ngForm: NgForm) {
     this.showMessageError = false;
 
     if (ngForm.valid && ngForm.submitted && this.contactData.privacy) {
       console.log(this.contactData);
 
-      /* this.showSuccessOverlay = true; */
+      // this.showSuccessOverlay = true;
       this.overlayService.show();
 
       setTimeout(() => {
@@ -72,5 +126,5 @@ export class ContactFormComponent {
       this.messagePlaceholder = 'What do you need to develop?';
       this.privacyPlaceholder = 'Please accept the privacy policy!';
     }
-  }
+  } */
 }
