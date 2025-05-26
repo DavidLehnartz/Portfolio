@@ -57,10 +57,6 @@ export class ContactFormComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            /* console.log('email verschickt');
-            console.log(this.contactData);
-            console.log(response); */
-
             this.overlayService.show();
             ngForm.resetForm();
             this.resetPlaceholders();
@@ -113,30 +109,4 @@ export class ContactFormComponent {
       return './icons/checkbox_unchecked.png';
     }
   }
-
-  /* onSubmit(ngForm: NgForm) {
-    this.showMessageError = false;
-
-    if (ngForm.valid && ngForm.submitted && this.contactData.privacy) {
-      console.log(this.contactData);
-
-      // this.showSuccessOverlay = true;
-      this.overlayService.show();
-
-      setTimeout(() => {
-        this.showSuccessOverlay = false;
-      }, 3000);
-    } else if (
-      this.contactData.name === '' ||
-      this.contactData.email === '' ||
-      this.contactData.message === '' ||
-      this.contactData.privacy === false
-    ) {
-      this.showMessageError = true;
-      this.namePlaceholder = 'You forgot to fill in your name!';
-      this.emailPlaceholder = 'Your email is required!';
-      this.messagePlaceholder = 'What do you need to develop?';
-      this.privacyPlaceholder = 'Please accept the privacy policy!';
-    }
-  } */
 }

@@ -52,12 +52,6 @@ section {
 }
 
 .testimonial-left {
-  /* background-image: url("./../../../../public/images/testimonial_sticker_left_right.png");
-  position: relative;
-  z-index: 2;
-  transform: rotate(-4deg);
-  margin-right: -125px; */
-
   max-width: 512px;
   width: 100%;
   height: 368px;
@@ -102,17 +96,9 @@ section {
 }
 
 .testimonial-left-inner-content {
-  /* display: flex;
-  flex-direction: column;
-  gap: 136px;
-  position: absolute;
-  top: 0px;
-  padding: 32px 16px; */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: 136px; */
   position: absolute;
   top: 0px;
   padding: 32px 16px;
@@ -156,9 +142,6 @@ section {
     }
   }
 
-  /* position: relative;
-  z-index: 1; */
-
   > img {
     width: 512px;
     height: 368px;
@@ -171,13 +154,6 @@ section {
 }
 
 .testimonial-center-inner-content {
-  /* display: flex;
-  flex-direction: column;
-  gap: 136px;
-  position: absolute;
-  top: 0px;
-  padding: 32px 16px; */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -236,13 +212,6 @@ section {
 }
 
 .testimonial-right-inner-content {
-  /* display: flex;
-  flex-direction: column;
-  gap: 136px;
-  position: absolute;
-  top: 0px;
-  padding: 32px 16px; */
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;

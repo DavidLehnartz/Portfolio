@@ -41,12 +41,12 @@ a {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scrollbar-width: none; // Firefox
-  -ms-overflow-style: none; // IE/Edge
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none; // Chrome, Safari
+  display: none;
 }
 
 .scroll-section {
@@ -56,26 +56,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
-/* .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.overlay-content {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  font-size: 1.2rem;
-} */
 
 .overlay {
   position: fixed;

@@ -52,7 +52,7 @@ export class HeaderComponent {
     this.isBurgerMenuOpen = !this.isBurgerMenuOpen;
 
     if (!this.isBurgerMenuOpen) {
-      this.isHovered = false; // ← Hover-Zustand beim Schließen zurücksetzen
+      this.isHovered = false;
     }
   }
 }

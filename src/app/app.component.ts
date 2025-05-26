@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 
       setTimeout(() => {
         this.showOverlay = false;
-      }, 300); // fadeOut duration
+      }, 300);
     }, 3000);
   }
 }

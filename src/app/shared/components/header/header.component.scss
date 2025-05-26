@@ -87,7 +87,7 @@ section {
     }
 
     &.active-language {
-      color: #1976ea; // z.B. ein Cyan-Ton für aktive Sprache
+      color: #1976ea;
 
       > img {
         display: block;
@@ -96,14 +96,6 @@ section {
   }
 }
 
-/* button:active {
-  color: #f87a55;
-
-  &:hover img {
-    display: none;
-  }
-}
- */
 .line {
   position: relative;
   width: 32px;
@@ -111,7 +103,6 @@ section {
   border: solid;
   border-color: #f8f9fa;
   background-color: #ea9019;
-  /*  background-color: #279f5f; */
   border-radius: 8px;
 }
 
@@ -138,7 +129,6 @@ section {
 }
 
 .active-language {
-  /*  color: #f87a55; */
   color: #1976ea;
 }
 
@@ -163,14 +153,13 @@ section {
   background-position: center;
   background-repeat: no-repeat;
 
-  transform: translateY(-100%); /* Start außerhalb vom Viewport */
+  transform: translateY(-100%);
   opacity: 0;
   transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
 .burger-header {
   @include dFlex($jContent: space-between);
-  /* padding: 16px; */
   width: 100%;
   margin-top: 16px;
 
@@ -224,7 +213,6 @@ section {
       cursor: pointer;
       width: 32px;
       height: 32px;
-      /* border: 1px solid #f8f9fa; */
       border-radius: 100px;
       padding: 4px;
       transition: all 0.3s ease-in-out;
@@ -289,11 +277,11 @@ section {
 
     &:hover > img {
       display: block;
-         animation: revealCycle 2s ease-in-out infinite;
+      animation: revealCycle 2s ease-in-out infinite;
     }
 
     &.active-language {
-      color: #1976ea; // z.B. ein Cyan-Ton für aktive Sprache
+      color: #1976ea;
 
       > img {
         display: block;

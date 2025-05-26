@@ -2,7 +2,6 @@
 
 section {
   width: 100%;
-  /* min-height: 1000px; */
   background-image: url("./../../../../public/images/skill_set_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,7 +13,6 @@ h1 {
   font-weight: 700;
   color: #f8f9fa;
   z-index: 999;
-  /* margin-bottom: 32px; */
 }
 
 .reveal-loop {
@@ -26,7 +24,6 @@ h1 {
 .skill-set-top-wrapper {
   display: flex;
   gap: 42px;
-  /* padding: 144px 120px; */
   padding-top: 144px;
   padding-bottom: 48px;
   padding-left: 120px;
@@ -282,10 +279,6 @@ h1 {
 }
 
 @media (max-width: 740px) {
-  /* section {
-    height: 160vh;
-  } */
-
   .skill-set-icons-content {
     > div:nth-child(2) {
       justify-content: center;
@@ -333,11 +326,6 @@ h1 {
     > div:nth-child(2) {
       justify-content: space-between;
       gap: 32px 8px;
-
-      /* > img {
-        width: 72px;
-        height: 72px;
-      } */
     }
   }
 

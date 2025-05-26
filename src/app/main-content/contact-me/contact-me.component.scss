@@ -23,7 +23,6 @@ section {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  /*   gap: 48px; */
   width: 50%;
 }
 
@@ -141,10 +140,6 @@ section {
 /* MEDIA QUERY */
 
 @media (max-width: 800px) {
-  /*  section {
-    height: 100%;
-  } */
-
   .contact-me-wrapper {
     flex-direction: column;
     padding-left: 16px;

@@ -5,7 +5,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: black; 
+  background-color: black;
 }
 
 .privacy-policy-wrapper {
@@ -34,30 +34,32 @@ h1 {
 h2 {
   color: #1976ea;
   margin-bottom: 32px;
-   text-align: center;
+  text-align: center;
 }
 
 h3 {
   color: #1976ea;
   margin-bottom: 32px;
-   text-align: center;
+  text-align: center;
 }
 
 p {
   color: white;
   margin-bottom: 32px;
-   text-align: center;
+  text-align: center;
 }
 
 ul {
   color: white;
-   text-align: center;
+  text-align: center;
 }
 
 a {
   color: #f7c518;
-   text-align: center;
+  text-align: center;
 }
+
+/* MEDIA QUERY */
 
 @media (max-width: 960px) {
   .privacy-policy-wrapper {

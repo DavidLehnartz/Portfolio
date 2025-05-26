@@ -78,21 +78,24 @@
             Design</span
           >
         </div>
-        <div (click)="changeImage()" class="skill-set-sticker-responsive hidden">
+        <div
+          (click)="changeImage()"
+          class="skill-set-sticker-responsive hidden"
+        >
           <img [src]="currentImage" alt="sticker" />
           <div class="fontKalam">
             @if (isImageAActive) {
-          <img src="./icons/pull_to_peel_arrow.png" alt="arrow" />
-          {{ "stack.stickerTop" | translate }}
-          {{ "stack.stickerBottom" | translate }} } @else{
-          <div class="peeled-sticker-content-responsive">
-            {{ "stack.stickerPeeled" | translate }}
-            <div class="peeled-sticker-imgs">
-              <img src="./icons/python_icon.png" alt="icon" />
-              <img src="./icons/linux_icon.png" alt="icon" />
+            <img src="./icons/pull_to_peel_arrow.png" alt="arrow" />
+            {{ "stack.stickerTop" | translate }}
+            {{ "stack.stickerBottom" | translate }} } @else{
+            <div class="peeled-sticker-content-responsive">
+              {{ "stack.stickerPeeled" | translate }}
+              <div class="peeled-sticker-imgs">
+                <img src="./icons/python_icon.png" alt="icon" />
+                <img src="./icons/linux_icon.png" alt="icon" />
+              </div>
             </div>
-          </div>
-          }
+            }
           </div>
         </div>
       </div>

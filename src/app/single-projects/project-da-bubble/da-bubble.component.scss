@@ -19,7 +19,6 @@ section {
 .project-wrapper {
   display: flex;
   justify-content: space-between;
-  /* flex-direction: column; */
   max-width: 1920px;
   margin: 0px auto;
   padding: 0px 120px;
@@ -74,7 +73,7 @@ section {
   }
 }
 
-.reveal-loop{
+.reveal-loop {
   height: auto;
   animation: revealCycle 3s ease-in-out infinite;
   object-fit: cover;
@@ -325,7 +324,6 @@ section {
 
   .project-navigation {
     justify-content: space-between;
-    /* margin-bottom: 16px; */
   }
 }
 

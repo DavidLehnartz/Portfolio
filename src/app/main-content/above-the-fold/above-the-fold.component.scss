@@ -95,8 +95,6 @@ section {
     color: #f8f9fa;
 
     &:hover {
-      /* color: #f7c518; */
-      color: #1976ea;
       color: #f7c518;
     }
   }
@@ -212,16 +210,12 @@ section {
       background-color: #1976ea;
       box-shadow: none;
       opacity: 1;
-      /* transition: all 0.3s ease-in-out; */
       transform: scale(1.05);
     }
   }
 }
 
 .hero-social-media-wrapper {
-  /*  position: absolute;
-  bottom: 90px;
-  left: 72px; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -229,7 +223,6 @@ section {
   padding-left: 72px;
   gap: 8px;
   box-sizing: border-box;
-  /* margin-top: 32px; */
 
   > a {
     display: flex;
@@ -239,7 +232,6 @@ section {
       cursor: pointer;
       width: 32px;
       height: 32px;
-      /* border: 1px solid #f8f9fa; */
       border-radius: 100px;
       padding: 6px;
       transition: all 0.3s ease-in-out;
