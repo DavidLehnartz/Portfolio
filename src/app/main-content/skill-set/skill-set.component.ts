@@ -14,7 +14,7 @@ export class SkillSetComponent {
   transImage: string = './images/pull_to_peel_half_sticker.png';
   currentImage: string = this.firstImage;
   isImageAActive: boolean = true;
-  timeout: number = 50;
+  timeout: number = 0;
   timeoutImg: number = 200;
 
   changeImage() {
