@@ -3,12 +3,9 @@
     <app-header></app-header>
   </div>
   <div class="legal-notice-wrapper">
-    <div
-      class="legal-notice-content"
-      data-aos="fade-right"
-    >
-      <h1>{{"legalNotice.title"| translate}}</h1>
-      <p>Angaben gemäß § 5 DDG</p>
+    <div class="legal-notice-content" data-aos="fade-right">
+      <h1>{{ "legalNotice.title" | translate }}</h1>
+      <p>{{ "legalNotice.text1" | translate }}</p>
       <p>
         David Lehnartz<br />
         <br />
@@ -16,23 +13,23 @@
         42855 Remscheid <br />
       </p>
       <p>
-        <strong>Vertreten durch: </strong><br />
+        <strong>{{ "legalNotice.text2" | translate }} </strong><br />
         David Lehnartz<br />
       </p>
       <p>
-        <strong>Kontakt:</strong> <br />
-        Telefon: %2B49-15732295327<br />
+        <strong>{{ "legalNotice.text3" | translate }}</strong> <br />
+        {{ "legalNotice.text6" | translate }} 012345678910<br />
         E-Mail:
         <a href="mailto:malermeister-lehnartz@gmx.de"
           >malermeister-lehnartz&#64;gmx.de</a
         >
       </p>
       <br />
-      <p>Impressum von</p>
+      <p>{{ "legalNotice.text4" | translate }}</p>
       <a href="https://impressum-generator.de" rel="dofollow"
         >Impressum-Generator.de</a
       >.
-      <p>Powered by</p>
+      <p>{{ "legalNotice.text5" | translate }}</p>
       <a href="https://www.kanzlei-hasselbach.de/" rel="nofollow"
         >Franziska Hasselbach, Bonn</a
       >.
