@@ -48,7 +48,6 @@ export class HeaderComponent {
   }
 
   toggleBurgerMenu() {
-    console.log('Toggle clicked');
     this.isBurgerMenuOpen = !this.isBurgerMenuOpen;
 
     if (!this.isBurgerMenuOpen) {
