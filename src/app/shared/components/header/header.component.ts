@@ -14,7 +14,7 @@ import translationsDE from '../../../../../public/i18n/de.json';
 export class HeaderComponent {
   isEnglishActive: boolean = true;
   isHovered: boolean = false;
-  isBurgerMenuOpen = false;
+  isBurgerMenuOpen: boolean = false;
 
   constructor(private translate: TranslateService) {
     this.translate.setTranslation('en', translationsEN);

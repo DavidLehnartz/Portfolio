@@ -18,19 +18,13 @@ export class SkillSetComponent {
   timeoutImg: number = 200;
 
   changeImage() {
-    this.currentImage = this.transImage;
+    this.currentImage = this.lastImage;
 
-    setTimeout(() => {
-      if (this.isImageAActive) {
-        setTimeout(() => {
-          this.currentImage = this.lastImage;
-        }, this.timeout);
-      } else {
-        setTimeout(() => {
-          this.currentImage = this.firstImage;
-        }, this.timeout);
-      }
-      this.isImageAActive = !this.isImageAActive;
-    }, this.timeout);
+    if (this.isImageAActive) {
+      this.currentImage = this.lastImage;
+    } else {
+      this.currentImage = this.firstImage;
+    }
+    this.isImageAActive = !this.isImageAActive;
   }
 }
