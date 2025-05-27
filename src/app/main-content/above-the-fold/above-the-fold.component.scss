@@ -110,6 +110,7 @@ section {
   display: flex;
 
   &:hover {
+    transition: all 0.2s ease-in-out;
     text-transform: uppercase;
     color: #f7c518;
   }
@@ -120,6 +121,7 @@ section {
 
   &:hover {
     display: inline-block;
+    transition: all 0.2s ease-in-out;
     text-transform: lowercase;
     color: #f7c518;
   }
