@@ -100,13 +100,13 @@ export class ContactFormComponent {
 
   getCheckboxImage(): string {
     if (this.contactData.privacy && this.isHovered) {
-      return './icons/checkbox_checked_hover.png';
+      return './images/checkbox_checked_hover.png';
     } else if (this.contactData.privacy) {
-      return './icons/checkbox_checked.png';
+      return './images/checkbox_checked.png';
     } else if (this.isHovered) {
-      return './icons/checkbox_unchecked_hover.png';
+      return './images/checkbox_unchecked_hover.png';
     } else {
-      return './icons/checkbox_unchecked.png';
+      return './images/checkbox_unchecked.png';
     }
   }
 }
