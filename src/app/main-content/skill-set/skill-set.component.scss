@@ -28,7 +28,7 @@ h1 {
   padding-bottom: 48px;
   padding-left: 120px;
   padding-right: 120px;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -80,8 +80,8 @@ h1 {
 .skill-set-bottom-wrapper {
   padding-left: 120px;
   padding-right: 120px;
-  padding-bottom: 144px;
-  max-width: 1440px;
+  padding-bottom: 300px;
+  max-width: 1920px;
   margin: 0px auto;
 }
 
@@ -266,10 +266,13 @@ h1 {
       margin-left: 0px;
     }
   }
+}
 
-  .skill-set-top-wrapper {
-    padding-left: 32px;
-    padding-right: 32px;
+@media (max-width: 850px) {
+  section {
+    .skill-set-top-wrapper {
+      padding: 144px 32px;
+    }
   }
 
   .skill-set-bottom-wrapper {

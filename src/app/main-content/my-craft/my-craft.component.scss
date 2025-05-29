@@ -6,12 +6,12 @@ section {
 
 .my-craft-wrapper {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-top: 140px;
+  justify-content: space-between;
+  /*   flex-wrap: wrap; */
+  padding-top: 70px;
   padding-bottom: 88px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 120px;
+  padding-right: 120px;
   max-width: 1920px;
   margin: 0px auto;
   gap: 48px;
@@ -148,10 +148,10 @@ section {
 .my-craft-all-projects-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   max-width: 1920px;
   margin: 0px auto;
-  padding: 0px 16px;
+  padding: 0px 120px;
 }
 
 .all-project-content {
@@ -230,6 +230,14 @@ button {
 
 /* MEDIA QUERY  */
 
+@media (max-width: 1390px) {
+  .my-craft-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+}
+
 @media (max-width: 1120px) {
   .my-craft-wrapper {
     flex-direction: column;
@@ -243,6 +251,20 @@ button {
 
   .my-craft-all-projects-wrapper {
     gap: 32px;
+  }
+}
+
+@media (max-width: 850px) {
+  section {
+    .my-craft-wrapper {
+      padding-top: 144px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  .my-craft-all-projects-wrapper {
+    padding: 0px 32px;
   }
 }
 

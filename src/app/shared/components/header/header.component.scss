@@ -8,10 +8,10 @@ section {
 
 .header-wrapper {
   @include dFlex($jContent: space-between);
-  padding: 16px 72px;
+  padding: 16px 120px;
   height: 80px;
   margin: 0px auto;
-  max-width: 1440px;
+  max-width: 1920px;
 }
 
 .navbar-logo {

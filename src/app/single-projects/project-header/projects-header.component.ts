@@ -60,9 +60,9 @@ export class ProjectHeaderComponent {
    */
   getBurgerMenuImgOpen(): string {
     if (this.isHovered) {
-      return './icons/burger_hover.png';
+      return 'images/burger_hover.png';
     } else {
-      return './icons/burger_default.png';
+      return 'images/burger_default.png';
     }
   }
 
@@ -76,9 +76,9 @@ export class ProjectHeaderComponent {
    */
   getBurgerMenuImgClose(): string {
     if (this.isHovered && this.isBurgerMenuOpen) {
-      return './icons/burger_close_hover.png';
+      return 'images/burger_close_hover.png';
     } else {
-      return './icons/burger_close.png';
+      return 'images/burger_close.png';
     }
   }
 

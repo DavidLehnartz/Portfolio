@@ -2,7 +2,9 @@
 
 section {
   @include dFlex();
+  max-height: 720px;
   height: 100vh;
+  padding: 144px 120px;
 }
 
 h2 {
@@ -20,8 +22,7 @@ p {
 .about-me-wrapper {
   display: flex;
   gap: 32px;
-  padding: 144px 120px;
-  max-width: 1440px;
+  max-width: 1920px;
 }
 
 .about-me-content-left {
@@ -175,14 +176,12 @@ button {
   }
 }
 
-@media (max-width: 830px) {
-  .about-me-wrapper {
-    padding: 144px 0px;
+@media (max-width: 850px) {
+  section {
+    padding: 144px 32px;
   }
 
   .about-me-content-right {
-    padding: 0px 32px;
-
     > h2 {
       padding: 0px 16px;
     }

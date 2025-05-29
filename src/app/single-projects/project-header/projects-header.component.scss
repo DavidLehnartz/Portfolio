@@ -9,7 +9,7 @@ section {
 
 .header-wrapper {
   @include dFlex($jContent: space-between);
-  padding: 16px 72px;
+  padding: 16px 120px;
   height: 80px;
   margin: 0px auto;
   max-width: 1920px;
@@ -276,8 +276,8 @@ button:active {
 
 @media (max-width: 1400px) {
   .header-wrapper {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .navbar-links {
