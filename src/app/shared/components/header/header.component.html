@@ -65,17 +65,17 @@
       />
     </div>
     <div class="burger-center">
-      <a [routerLink]="['/']" fragment="about_me">
+      <a [routerLink]="['/']" fragment="about_me" (click)="toggleBurgerMenu()">
         {{ "aboutMe.title" | translate }}
       </a>
-      <a [routerLink]="['/']" fragment="skill_set"
-        >{{ "skills.title" | translate }}
+      <a [routerLink]="['/']" fragment="skill_set" (click)="toggleBurgerMenu()">
+      {{ "skills.title" | translate }}
       </a>
-      <a [routerLink]="['/']" fragment="my_craft"
-        >{{ "projects.title" | translate }}
+      <a [routerLink]="['/']" fragment="my_craft" (click)="toggleBurgerMenu()">
+        {{ "projects.title" | translate }}
       </a>
-      <a [routerLink]="['/']" fragment="contact"
-        >{{ "contact.title" | translate }}
+      <a [routerLink]="['/']" fragment="contact" (click)="toggleBurgerMenu()">
+        {{ "contact.title" | translate }}
       </a>
     </div>
     <div class="navbar-language-changer-burger">
@@ -98,21 +98,21 @@
       </button>
     </div>
     <div class="burger-footer">
-      <a
+      <a (click)="toggleBurgerMenu()"
         href="https://github.com/DavidLehnartz"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img src="/images/git_hub.png" alt="icon" />
       </a>
-      <a
+      <a (click)="toggleBurgerMenu()"
         href="https://www.linkedin.com/in/david-lehnartz-3307602b4/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img src="/images/linked_in.png" alt="icon" />
       </a>
-      <a
+      <a (click)="toggleBurgerMenu()"
         href="mailto:info@devwithdavid.com"
         target="_blank"
         rel="noopener noreferrer"
